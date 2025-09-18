@@ -340,28 +340,74 @@ header {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-  #header h1 {
-    font-size: 120px;
-    line-height: 100px;
+@media (max-width: 1024px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3em 5%;
   }
 
-  .description {
-    font-size: 1em;
-    max-width: 600px;
+  .hero-content {
+    max-width: 100%;
   }
 
-  .scroll-btn {
-    width: 50px;
-    height: 50px;
+  .hero-content h1 {
+    font-size: 2.8rem;
   }
 
-  .scroll-btn i {
-    font-size: 35px;
+  .hero-visual {
+    margin-top: 2rem;
+  }
+
+  .trust {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .trust-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-visual .person {
+    margin-right: 120px;
+  }
+
+  .shape {
+    position: absolute;
+    z-index: 3;
+    width: 150px;
+  }
+
+  .shape-triangle {
+    bottom: -30px;
+    left: 120px;
+    animation: spin 8s linear infinite;
+  }
+
+  .shape-square {
+    bottom: -30px;
+    left: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .shape-zig {
+    bottom: 30px;
+    right: 30px;
+    animation: float 6s ease-in-out infinite;
   }
 }
 
 @media (max-width: 768px) {
+  .logo img{
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
   .navbar ul {
     flex-direction: column;
     align-items: start;
@@ -395,6 +441,48 @@ header {
   #menu-icon {
     display: block;
   }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-visual .person {
+    max-width: 300px;
+    margin-right: 75px;
+  }
+
+  .stat-box {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .shape {
+    position: absolute;
+    z-index: 3;
+    width: 110px;
+  }
+
+  .shape-triangle {
+    bottom: -30px;
+    left: 120px;
+    animation: spin 8s linear infinite;
+  }
+
+  .shape-square {
+    bottom: -20px;
+    left: 40px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .shape-zig {
+    bottom: 30px;
+    right: 10px;
+    animation: float 6s ease-in-out infinite;
+  }
 }
 
 @media (max-width: 480px) {
@@ -402,12 +490,17 @@ header {
     display: block;
   }
 
+  header {
+    justify-content: space-between;
+    padding: .5em 1em;
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
     width: 90%;
     padding: 1rem 3%;
-    background: var(--red-color);
+    background: var(--bg-color);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
   }
@@ -431,5 +524,70 @@ header {
     font-size: 0.9em;
     flex-direction: column;
     gap: 0;
+  }
+
+  #hero {
+    padding: 3em 1.5em;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: .9rem;
+  }
+
+  .btn {
+    padding: 0.6em 1em;
+    font-size: .85rem;
+  }
+
+  .hero-visual .person {
+    max-width: 250px;
+    margin-right: 60px;
+  }
+
+  .trust-text p {
+    font-size: 1.5rem;
+  }
+
+  .trust-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stat-box {
+    max-width: 100%;
+  }
+
+  .marquee-content span {
+    font-size: 13px;
+    gap: 1.5rem;
+    margin: .3rem .8rem;
+  }
+
+  .shape {
+    position: absolute;
+    z-index: 3;
+    width: 80px;
+  }
+
+  .shape-triangle {
+    bottom: -30px;
+    left: 90px;
+    animation: spin 8s linear infinite;
+  }
+
+  .shape-square {
+    bottom: -20px;
+    left: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .shape-zig {
+    bottom: 30px;
+    right: 10px;
+    animation: float 6s ease-in-out infinite;
   }
 }
