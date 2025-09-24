@@ -1,127 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JobSeeker</title>
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Boxicons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-</head>
-<body>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  </head>
+
+  <body>
     <!-- NAVBAR -->
     <header>
+        <i class="bx bx-menu" id="menu-icon"></i>
         <a href="#" class="logo"><img src="images/shape-square.svg" alt="" /></a>
-        <i class="bx bx-menu-alt-right" id="menu-icon"></i>
-        <nav class="navbar">
+        <nav class="navbar navbar-custom">
         <ul>
             <li><a href="#tentang-kami">Tentang</a></li>
-            <li><a href="#">CV Builder</a></li>
-            <a href="#">
-            <img src="images/shape-square.svg" class="inner-logo" alt="" />
+            <li><a href="cv-builder.html">CV Builder</a></li>
+            <a href="#" class="inner-logo">
+            <img src="images/shape-square.svg" alt="" />
             </a>
             <li><a href="#">Course</a></li>
             <li><a href="#">Feedback</a></li>
         </ul>
-        </nav>
+      </nav>
     </header>
+    
     <!-- HERO SECTION -->
     <section id="hero">
-        <img src="images/bg-gradient-circle.png" alt="Gradient Circle" class="bg-circle" />
+      <img
+        src="images/bg-gradient-circle.png"
+        alt="Gradient Circle"
+        class="bg-circle"
+      />
 
-        <div class="hero-content">
-            <h1>Kerja <span class="span">Pertama</span>,<br>Gak Pake <span class="highlight">Ribet.</span></h1>
-            <p>
-            Platform job seeking yang khusus buat lulusan SMK! Cari kerja sesuai jurusan, 
-            dapet peluang nyata, langsung mulai kariermu.
-            </p>
-            <a href="#" class="btn">Explore Now!</a>
-        </div>
+      <div class="hero-content">
+        <h1>
+          Kerja <span class="span">Pertama</span>,<br />Gak Pake
+          <span class="highlight">Ribet.</span>
+        </h1>
+        <p>
+          Platform job seeking yang khusus buat lulusan SMK! Cari kerja sesuai
+          jurusan, dapet peluang nyata, langsung mulai kariermu.
+        </p>
+        <a href="#" class="btn-explore">Explore Now!</a>
+      </div>
 
-        <div class="hero-visual">
-            <!-- https://unsplash.com/id/foto/seorang-pria-mengenakan-topi-dan-gaun-kelulusan-memegang-ijazah-Duym6-LBz4E -->
-            <img src="images/hero-person.png" alt="Graduate" class="person" />
+      <div class="hero-visual">
+        <!-- https://unsplash.com/id/foto/seorang-pria-mengenakan-topi-dan-gaun-kelulusan-memegang-ijazah-Duym6-LBz4E -->
+        <img src="images/hero-person.png" alt="Graduate" class="person" />
 
-            <img src="images/shape-triangle.svg" alt="triangle" class="shape shape-triangle" />
-            <img src="images/shape-square.svg" alt="square" class="shape shape-square" />
-            <img src="images/shape-zig.svg" alt="zigzag shape" class="shape shape-zig" />
-        </div>
+        <img
+          src="images/shape-triangle.svg"
+          alt="triangle"
+          class="shape shape-triangle"
+        />
+        <img
+          src="images/shape-square.svg"
+          alt="square"
+          class="shape shape-square"
+        />
+        <img
+          src="images/shape-zig.svg"
+          alt="zigzag shape"
+          class="shape shape-zig"
+        />
+      </div>
     </section>
 
     <div class="marquee">
-        <div class="marquee-content">
-            <span>
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z" fill="black"/>
-            </svg>
-            Career interest test
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z" fill="black"/>
-            </svg>
-            </span>
-            <span>
-            SMK-focused jobs
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z" fill="black"/>
-            </svg>
-            </span>
-            <span>
-            Free CV builder
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z" fill="black"/>
-            </svg>
-            </span>
-            <span>
-            Job-ready webinars
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z" fill="black"/>
-            </svg>
-            </span>
-            <span>
-            Weekly opportunities
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z" fill="black"/>
-            </svg>
-            </span>
-        </div>
+      <div class="marquee-content">
+        <span>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+              fill="black"
+            />
+          </svg>
+          Career interest test
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+        <span>
+          SMK-focused jobs
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+        <span>
+          Free CV builder
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+        <span>
+          Job-ready webinars
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+        <span>
+          Weekly opportunities
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
 
     <!-- STATS -->
-     <section class="trust">
-        <div class="trust-text">
-            <p>Trusted by 
-                <br><strong>SMK Talent</strong>
-            </p>
+    <section class="trust">
+      <div class="trust-text">
+        <p>Trusted by <br /><strong>SMK Talent</strong></p>
+      </div>
+
+      <div class="trust-stats">
+        <div class="stat-box">
+          <h3><span class="count" data-target="90">0</span>K+</h3>
+          <p>Anak SMK join</p>
+        </div>
+        <div class="stat-box">
+          <h3><span class="count" data-target="500">0</span>+</h3>
+          <p>Partner siap rekrut</p>
+        </div>
+        <div class="stat-box">
+          <h3><span class="count" data-target="1200">0</span>+</h3>
+          <p>Lowongan aktif</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="tentang-kami">
+      <h2 class="title">Tentang Kami</h2>
+
+      <div class="about">
+        <div class="about-visual">
+          <img
+            src="images/about-person.png"
+            alt="Graduate"
+            class="about-person"
+          />
+
+          <!-- card kiri -->
+          <div class="info-card job">
+            <p>Terverifikasi</p>
+            <h2>250+</h2>
+            <p>Postingan Job/Hari</p>
+          </div>
+
+          <!-- card kanan bawah -->
+          <div class="info-card user">
+            <p>Terverifikasi</p>
+            <h2>10K</h2>
+            <p>Pengguna</p>
+          </div>
         </div>
 
-        <div class="trust-stats">
-            <div class="stat-box">
-            <h3><span class="count" data-target="90">0</span>K+</h3>
-            <p>Anak SMK join</p>
-            </div>
-            <div class="stat-box">
-            <h3><span class="count" data-target="500">0</span>+</h3>
-            <p>Partner siap rekrut</p>
-            </div>
-            <div class="stat-box">
-            <h3><span class="count" data-target="1200">0</span>+</h3>
-            <p>Lowongan aktif</p>
-            </div>
+        <div class="about-content">
+          <h1>
+            Kerja <span class="span">Pertama</span>,<br />
+            Gak Pake <span class="highlight">Ribet.</span>
+          </h1>
+          <p>
+            Platform job seeking yang khusus buat lulusan SMK! Cari kerja sesuai
+            jurusan, dapet peluang nyata, langsung mulai kariermu.
+          </p>
         </div>
+      </div>
     </section>
+
+    <!-- FITUR -->
+    <section id="fitur">
+      <h2 class="title">Fitur</h2>
+
+      <div class="fitur-container">
+        <!-- Left Cards -->
+        <div class="left-cards">
+          <div class="card-fitur">
+            <div class="card-icon"></div>
+            <h3>Cari Minatmu!</h3>
+            <p>Temukan passion yang kamu suka</p>
+            <a href="#" class="arrow"
+              ><i class="bx bx-up-right-arrow-alt"></i
+            ></a>
+          </div>
+          <div class="card-fitur">
+            <div class="card-icon"></div>
+            <h3>Build CV</h3>
+            <p>Buat CV profesional dengan mudah</p>
+            <a href="#" class="arrow"
+              ><i class="bx bx-up-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="phone-wrapper">
+          <!-- Background dengan tanda tanya -->
+          <img
+            src="images/tanda-tanya.png"
+            alt="Background"
+            class="bg-question"
+          />
+
+          <!-- Mockup HP -->
+          <img src="images/phone.png" alt="Phone" class="phone-img" />
+
+          <!-- Video di dalam layar HP -->
+          <video class="phone-video" autoplay muted loop playsinline>
+            <source src="videos/demo.mp4" type="video/mp4" />
+            Browser kamu tidak support video tag.
+          </video>
+        </div>
+
+        <!-- Right Cards -->
+        <div class="right-cards">
+          <div class="card-fitur">
+            <div class="card-icon"></div>
+            <h3>Webinar</h3>
+            <p>Belajar skill baru dari mentor</p>
+            <a href="#" class="arrow"
+              ><i class="bx bx-up-right-arrow-alt"></i
+            ></a>
+          </div>
+          <div class="card-fitur">
+            <div class="card-icon"></div>
+            <h3>Job Seeker</h3>
+            <p>Cari dan lamar kerja cepat</p>
+            <a href="#" class="arrow"
+              ><i class="bx bx-up-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="karir">
+  <h2 class="title">Temukan karir yang paling sesuai untuk kamu</h2>
+  <p class="karir-content">
+    Magenta menawarkan berbagai peluang yang sesuai dengan keterampilan dan ambisi Kamu.
+    Daftar hari ini dan ambil langkah berikutnya menuju karier Impian. Masa depan Kamu dimulai di sini.
+  </p>
+
+  <div class="container mt-4">
+    <form class="d-flex flex-wrap align-items-center bg-white p-3 rounded shadow-sm gap-2">
+      <input type="text" class="form-control flex-grow-1" placeholder="Posisi">
+
+      <select class="form-select flex-grow-1">
+        <option selected>Perusahaan</option>
+        <option>Perusahaan A</option>
+        <option>Perusahaan B</option>
+      </select>
+
+      <select class="form-select flex-grow-1">
+        <option selected>Lokasi</option>
+        <option>Jakarta</option>
+        <option>Bandung</option>
+      </select>
+
+      <select class="form-select flex-grow-1">
+        <option selected>Jurusan</option>
+        <option>Teknik</option>
+        <option>Ekonomi</option>
+      </select>
+
+      <select class="form-select flex-grow-1">
+        <option selected>Jenjang Pendidikan</option>
+        <option>SMA/SMK</option>
+        <option>S1</option>
+        <option>S2</option>
+      </select>
+
+      <button type="submit" class="btn btn-teal d-flex align-items-center justify-content-center">
+        <i class="bi bi-search"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</body>
+  </body>
 </html>
