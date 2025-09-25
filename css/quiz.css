@@ -1,0 +1,295 @@
+:root {
+    --primary-color: #1b1b1b;
+    --bg-color: #FDF8E3;
+    --green-color: #01B7AB;
+    --purple-color: #5D5BFF;
+    --yellow-color: #FDB725;
+    --orange-color: #FD8A25;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--primary-color);
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Intro */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+    animation: swipeHighlight 3s ease-in-out infinite;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.gedung-kiri,
+.gedung-kanan {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 400px;
+}
+
+.gedung-kiri {
+    left: 0;
+}
+
+.gedung-kanan {
+    right: 0;
+}
+
+.hero .title {
+    z-index: 2;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    z-index: 2;
+    max-width: 550px;
+    margin: 0 auto 3rem auto;
+    font-size: 22px;
+    color: #484848;
+}
+
+.bawah-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#startBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--green-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 2rem;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#startBtn:hover {
+    background-color: var(--orange-color);
+    transition: 0.5s linear;
+}
+
+#btnText {
+    transition: all 0.3s ease-in-out;
+}
+
+.svg-wrapper-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s linear;
+    transform: translateX(0) scale(1);
+}
+
+#startBtn:hover #btnText {
+    opacity: 0;
+}
+
+#startBtn.hovered .svg-wrapper-1 {
+    transform: translateX(3.5em) scale(1.35);
+    fill: white;
+}
+
+/* Quiz */
+#quiz {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#answerOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.answer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    height: 120px;
+    padding: 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    color: #333;
+    border: 2px solid #eee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.answer-btn:hover {
+    background-color: var(--orange-color);
+    color: white !important;
+}
+
+.answer-btn.active {
+    background-color: var(--orange-color);
+    color: white;
+}
+
+/* Progress wrapper */
+.progress {
+    background: #ffeeba;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--orange-color);
+    width: 0%;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+#questionText {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+/* Result box */
+#result {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  max-width: 450px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#result h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.4;
+}
+
+#result button {
+  background: #00c29d;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#result button:hover {
+  background: #00a685;
+}
+
+/* Job Result card */
+#jobResult {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+#jobResult .card-body {
+  padding: 20px;
+}
+
+#jobResult .card-body h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#jobResult .card-body p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+#jobResult button {
+  background: #00c29d;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+#jobResult button:hover {
+  background: #00a685;
+}
+
+/* Gambar placeholder pekerjaan */
+#jobResult .job-image {
+  background: #eee;
+  height: 120px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
