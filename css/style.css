@@ -1,8 +1,9 @@
 :root {
     --primary-color: #1b1b1b;
     --bg-color: #FDF8E3;
+    --light-grey-color: #8F8F8F;
     --green-color: #01B7AB;
-    --purple-color: #5D5BFF;
+    --purple-color: #bababa;
     --yellow-color: #FDB725;
     --orange-color: #FD8A25;
 }
@@ -24,6 +25,22 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.primary-color{
+  color: var(--green-color);
+}
+
+.light-grey{
+  color: var(--light-grey-color);
+}
+
+.bg-success{
+  background-color: #D1FADF;
+}
+
+.outline-success{
+  border: solid 1px var(--green-color);
 }
 
 /* HEADER */
@@ -792,12 +809,51 @@ header {
   z-index: 2;
 }
 
-/* KARIR */
+/* SECTION KARIR */
 #karir {
+  padding-top: 2em;
+  padding-bottom: 4em;
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+
+}
+
+#karir::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 886px;
+  height: 886px;
+  background: radial-gradient(
+    circle,
+    rgba(209, 250, 223, 0.4) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  z-index: 0;
+}
+
+#karir * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card shadow tetap kelihatan */
+.card {
+  overflow: visible;
+}
+
+
+
+/* SPONSOR */
+#sponsor {
   padding-top: 1em;
   background-color: #FFFFFF;
   width: 100%;
 }
+
 
 .karir-content{
   align-items: center;
@@ -1015,3 +1071,36 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.127);
     transform: translateY(-2px); 
 }
+
+.sponsor-logo {
+  display: block;
+  max-height: 40px;    
+  width: auto;         
+  object-fit: contain; 
+  margin: 0 auto;      
+}
+
+.sponsor-glints {
+  display: block;
+  max-height: 60px;    
+  width: auto;          
+  object-fit: contain; 
+  margin: 0 auto;    
+}
+
+.sponsor-linkedin {
+  display: block;
+  max-height: 60px;    
+  width: auto;          
+  object-fit: contain; 
+  margin: 0 auto;    
+}
+
+.karir-content span{
+  color: var(--green-color);
+  font-weight: bold;
+}
+
+
+
+
