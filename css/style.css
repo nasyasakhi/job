@@ -1134,16 +1134,73 @@ header {
   }
   .footer {
     width: 100%;
-    background: #00bfa6; /* hijau tosca full bg */
+    background:var(--green-color); /* hijau tosca full bg */
     position: relative;
     z-index: 1;
   }
-  .btn-teal {
-    background-color: #00bfa6;
-  }
-  .btn-teal:hover {
-    background-color: #009e8a;
-  }
+
+ .btn-white {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  color:var(--green-color);
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease;
+  z-index: 0;
+  border-bottom: 3px solid transparent;
+}
+
+.btn-white::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px; 
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease;
+  z-index: -1;
+}
+
+.btn-white:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+.btn-white:hover {
+  color: var(--green-color);
+  border-bottom: 3px solid var(--green-color);
+}
+
+
+.email-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.email-input {
+  width: 100%;
+  padding-right: 3rem; /* space buat icon di kanan */
+  border-radius: 30px; /* rounded besar kayak gambar */
+  height: 50px; /* tinggi input */
+  font-size: 16px;
+}
+
+.email-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00b4aa; /* warna icon */
+  font-size: 20px;
+  pointer-events: none; /* supaya klik fokus ke input */
+}
+
 
 
 
