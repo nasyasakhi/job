@@ -697,33 +697,22 @@ header {
 
 /* FITUR */
 #fitur {
-  font-size: 2rem;
-  font-weight: 600;
-  padding-top: 1em;
-  width: 100%;
-  /* min-height: 90vh; */
-  padding-left: 3em;
-  padding-right: 3em;
-}
-
-.fitur-container {
-  align-items: flex-start; 
-  display: flex;
-  justify-content: space-between;
+ 
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  align-items: stretch; /* biar semua col tingginya sama */
 }
 
 .card-fitur {
   background: #fff6e9;
   border-radius: 20px;
-  padding: 0 30px 0;
+  padding: 20px;
   text-align: left;
   position: relative;
-  width: 265px;
-  height: 242px;
+  flex: 1;              /* biar card bisa fleksibel tinggi */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1em;
 }
 
 .card-icon {
@@ -766,17 +755,16 @@ header {
 }
 
 .phone-wrapper {
-  width: 518px;
-  height: 510px;
+  width: 100%;
+  max-width: 518px;
+  height: 510px; /* ini patokan tinggi */
   background: var(--green-color);
   border-radius: 30px;
   position: relative;
   overflow: hidden;
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1em;
 }
 
 .phone-wrapper .bg-question {
@@ -791,23 +779,23 @@ header {
 .phone-wrapper .phone-img {
   position: absolute;
   max-width: 75%;
-  max-height: auto;
   z-index: 2;
-  top: 110px; 
+  top: 110px;
 }
 
 /* video dalam layar */
 .phone-wrapper .phone-video {
   position: absolute;
-  width: 55%;      
-  height: 75%;     
-  top: 12%;        
+  width: 55%;
+  height: 75%;
+  top: 12%;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 20px; 
+  border-radius: 20px;
   object-fit: cover;
   z-index: 2;
 }
+
 
 /* SECTION KARIR */
 #karir {
@@ -1090,7 +1078,7 @@ header {
 
 .sponsor-linkedin {
   display: block;
-  max-height: 60px;    
+  max-height: 65px;    
   width: auto;          
   object-fit: contain; 
   margin: 0 auto;    
@@ -1100,6 +1088,63 @@ header {
   color: var(--green-color);
   font-weight: bold;
 }
+
+/* CV */
+.cv-section {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden; /* biar rounded corner ikut ke gambar */
+    }
+
+    .cv-section img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cv-text {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: #fff;
+      max-width: 600px;
+    }
+
+    .cv-text h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .cv-text p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+
+    
+
+
+    /* FOOTER */
+
+   .cta-footer {
+    margin-bottom: -20px; /* biar nimpa ke atas footer */
+    position: relative;
+    z-index: 2;
+  }
+  .footer {
+    width: 100%;
+    background: #00bfa6; /* hijau tosca full bg */
+    position: relative;
+    z-index: 1;
+  }
+  .btn-teal {
+    background-color: #00bfa6;
+  }
+  .btn-teal:hover {
+    background-color: #009e8a;
+  }
+
 
 
 

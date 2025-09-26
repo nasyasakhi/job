@@ -251,70 +251,57 @@
     </section>
 
     <!-- FITUR -->
-    <section id="fitur">
-      <h2 class="title">Fitur</h2>
+    <section id="fitur" class="container-fluid py-5">
+    <h2 class="title text-center mb-5">Fitur</h2>
 
-      <div class="fitur-container">
-        <!-- Left Cards -->
-        <div class="left-cards">
-          <div class="card-fitur">
-            <div class="card-icon"></div>
-            <h3>Cari Minatmu!</h3>
-            <p>Temukan passion yang kamu suka</p>
-            <a href="#" class="arrow"
-              ><i class="bx bx-up-right-arrow-alt"></i
-            ></a>
-          </div>
-          <div class="card-fitur">
-            <div class="card-icon"></div>
-            <h3>Build CV</h3>
-            <p>Buat CV profesional dengan mudah</p>
-            <a href="#" class="arrow"
-              ><i class="bx bx-up-right-arrow-alt"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- Phone -->
-        <div class="phone-wrapper">
-          <!-- Background dengan tanda tanya -->
-          <img
-            src="images/tanda-tanya.png"
-            alt="Background"
-            class="bg-question"
-          />
-
-          <!-- Mockup HP -->
-          <img src="images/phone.png" alt="Phone" class="phone-img" />
-
-          <!-- Video di dalam layar HP -->
-          <video class="phone-video" autoplay muted loop playsinline>
-            <source src="videos/demo.mp4" type="video/mp4" />
-            Browser kamu tidak support video tag.
-          </video>
-        </div>
-
-        <!-- Right Cards -->
-        <div class="right-cards">
-          <div class="card-fitur">
-            <div class="card-icon"></div>
-            <h3>Webinar</h3>
-            <p>Belajar skill baru dari mentor</p>
-            <a href="#" class="arrow"
-              ><i class="bx bx-up-right-arrow-alt"></i
-            ></a>
-          </div>
-          <div class="card-fitur">
-            <div class="card-icon"></div>
-            <h3>Job Seeker</h3>
-            <p>Cari dan lamar kerja cepat</p>
-            <a href="#" class="arrow"
-              ><i class="bx bx-up-right-arrow-alt"></i
-            ></a>
-          </div>
-        </div>
+  <div class="row justify-content-center align-items-stretch">
+    <!-- Left Cards -->
+    <div class="col-md-3 d-flex flex-column justify-content-between">
+      <div class="card-fitur mb-3">
+        <div class="card-icon"></div>
+        <h3>Cari Minatmu!</h3>
+        <p>Temukan passion yang kamu suka</p>
+        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
       </div>
-    </section>
+      <div class="card-fitur">
+        <div class="card-icon"></div>
+        <h3>Build CV</h3>
+        <p>Buat CV profesional dengan mudah</p>
+        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="phone-wrapper">
+        <img src="images/tanda-tanya.png" alt="Background" class="bg-question" />
+        <img src="images/phone.png" alt="Phone" class="phone-img" />
+        <video class="phone-video" autoplay muted loop playsinline>
+          <source src="videos/demo.mp4" type="video/mp4" />
+          Browser kamu tidak support video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- Right Cards -->
+    <div class="col-md-3 d-flex flex-column justify-content-between">
+      <div class="card-fitur mb-3">
+        <div class="card-icon"></div>
+        <h3>Webinar</h3>
+        <p>Belajar skill baru dari mentor</p>
+        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
+      </div>
+      <div class="card-fitur">
+        <div class="card-icon"></div>
+        <h3>Job Seeker</h3>
+        <p>Cari dan lamar kerja cepat</p>
+        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- KARIR -->
 
@@ -611,7 +598,7 @@
           <div class="col-6 col-md-3">
             <img
               src="images/linkedin.png"
-              class="img-fluid sponsor-logo"
+              class="img-fluid sponsor-linkedin"
               alt="LinkedIn"
             />
           </div>
@@ -632,6 +619,91 @@
         </div>
       </div>
     </section>
+
+    <section class="container my-5">
+    <div class="cv-section">
+      <!-- Gambar background -->
+      <img src="images/background-cv.png" alt="Background CV Section">
+
+      <!-- Teks di atas gambar -->
+      <div class="cv-text">
+        <h1>Accelerate Your Job Hunt by <u>Uploading Your CV Now</u> & Land Your Dream Job!</h1>
+        <p>Upload your CV today to stand out to top employers and seize exciting career opportunities!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta-footer text-center">
+  <div class="container">
+    <div class="card shadow-lg border-0 p-4 mx-auto" style="max-width: 800px; border-radius: 10px;">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <h4 class="mb-3 mb-md-0 fw-bold">
+          Does your company needs great employees?
+        </h4>
+        <a href="#" class="btn-add text-white px-4 py-2" style="border-radius: 50px;">
+          Post a Job
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer class="footer text-white">
+  <div class="container py-5">
+    <div class="row">
+      <!-- Logo -->
+      <div class="col-md-3 mb-4">
+  <div class="d-flex align-items-center">
+    <img src="images/logo_siker.png" class="me-2 w-25"  alt="logo">
+    <h4 class="fw-bold mb-0">Siker</h4>
+  </div>
+</div>
+
+      <!-- Links -->
+      <div class="col-md-3 mb-4">
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Jobs</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Categories</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Links 2 -->
+      <div class="col-md-3 mb-4">
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Find Candidates</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Career Advice</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3 mb-4">
+        <p>Subscribe to our newsletter and never miss on any job updates!</p>
+        <form class="d-flex">
+          <input type="email" class="form-control rounded-start" placeholder="Enter your email">
+          <button class="btn btn-light rounded-end" type="submit">
+            ✉️
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="text-center py-3 border-top border-light">
+    <small>Copyright © 2024 Mansi C. All rights reserved</small>
+  </div>
+</footer>
+
+
+
 
 
 
