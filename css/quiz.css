@@ -18,6 +18,8 @@ body {
     overflow-x: hidden;
     color: var(--primary-color);
     font-family: "DM Sans", sans-serif;
+    background: url('images/awan-oren.png') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -25,6 +27,136 @@ body {
     align-items: center;
 }
 
+/* HEADER */
+.logo img {
+  width: 40px;
+  height: 40px;
+  cursor: default;
+  display: none;
+}
+
+#menu-icon {
+  font-size: 2.3rem;
+  color: var(--bg-color);
+  display: none;
+}
+
+header {
+  top: 20px;
+  width: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em 2em;
+  background-color: var(--purple-color);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px #4848be55;
+  transition: all 0.3s ease;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a,
+.navbar ul li a:visited {
+  width: auto;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.navbar ul li a:hover {
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.navbar ul img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    display: block;
+    width: 100%;
+  }
+
+  header {
+    min-width: 15%;
+    width: auto;
+    padding: 0.7rem;
+    gap: 1rem;
+    left: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateX(0);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute !important;
+    border-radius: 16px;
+    left: 0;
+    top: 110%;
+    width: 140%;
+    padding: 1rem 3%;
+    opacity: 0;
+    background: var(--purple-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar.active {
+    opacity: 100;
+    display: block;
+
+    .inner-logo {
+      display: none;
+    }
+  }
+
+  .navbar .inner-logo {
+    display: none;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .navbar ul li a {
+    display: block;
+    margin: 0.8rem 0;
+    text-align: center;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
 /* Intro */
 .hero {
     height: 100vh;
@@ -82,7 +214,7 @@ body {
     z-index: 2;
     max-width: 550px;
     margin: 0 auto 3rem auto;
-    font-size: 22px;
+    font-size: 20px;
     color: #484848;
 }
 
@@ -103,12 +235,13 @@ body {
     background: var(--green-color);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 20px 2rem;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     overflow: hidden;
+    z-index: 10;
 }
 
 #startBtn:hover {
@@ -133,16 +266,17 @@ body {
 }
 
 #startBtn.hovered .svg-wrapper-1 {
-    transform: translateX(3.5em) scale(1.35);
+    transform: translateX(3.8em) scale(1.35);
     fill: white;
 }
 
 /* Quiz */
 #quiz {
-    min-height: 90vh;
+    min-height: 100vh;
+    padding-top: 4rem;
+    background-color: #FFFBEB;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #answerOptions {
@@ -207,13 +341,25 @@ body {
 
 /* Result box */
 #result {
-  background: #fff;
-  padding: 40px 20px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  max-width: 450px;
-  margin: 0 auto;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: var(--bg-color); 
+  text-align: center;
+}
+
+#result .card-body {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  width: 90%;
+  max-width: 480px; 
 }
 
 #result h5 {
@@ -224,14 +370,47 @@ body {
 }
 
 #result button {
-  background: #00c29d;
+  position: relative;
+  overflow: hidden;
+  background: var(--green-color);
   color: #fff;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  padding: 12px 28px;
-  font-size: 16px;
+  display: inline-block;
+  z-index: 0;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid white;
   transition: all 0.3s ease;
+}
+
+#result button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease;
+  z-index: -1;
+}
+
+#result button:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+#result button:hover {
+  color: var(--green-color);
+  border-top: 1px solid var(--green-color) ;
+  border-left: 1px solid var(--green-color) ;
+  border-right: 1px solid var(--green-color) ;
+  border-bottom: 3px solid var(--green-color);
 }
 
 #result button:hover {
@@ -240,16 +419,25 @@ body {
 
 /* Job Result card */
 #jobResult {
-  background: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  max-width: 450px;
-  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: var(--bg-color); 
+  text-align: center;
 }
 
 #jobResult .card-body {
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  width: 90%;
+  max-width: 480px; 
 }
 
 #jobResult .card-body h5 {
@@ -266,15 +454,47 @@ body {
 }
 
 #jobResult button {
-  background: #00c29d;
-  border: none;
+  position: relative;
+  overflow: hidden;
+  background: var(--green-color);
   color: #fff;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 14px;
-  margin-top: 15px;
+  display: inline-block;
+  z-index: 0;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid white;
   transition: all 0.3s ease;
+}
+
+#jobResult button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease;
+  z-index: -1;
+}
+
+#jobResult button:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+#jobResult button:hover {
+  color: var(--green-color);
+  border-top: 1px solid var(--green-color) ;
+  border-left: 1px solid var(--green-color) ;
+  border-right: 1px solid var(--green-color) ;
+  border-bottom: 3px solid var(--green-color);
 }
 
 #jobResult button:hover {
@@ -292,4 +512,162 @@ body {
   color: #666;
   font-size: 14px;
   margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  header {
+    max-width: 90%;
+    padding: 0.6rem 1.2rem;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    max-width: 500px;
+  }
+
+  .gedung-kiri,
+  .gedung-kanan {
+    width: 300px;
+  }
+
+  #startBtn {
+    padding: 16px 1.8rem;
+    font-size: 18px;
+  }
+
+  #quiz {
+    padding: 4rem 2rem 0;
+  }
+
+  #questionText {
+    font-size: 18px;
+  }
+
+  .answer-btn {
+    height: auto;
+    min-height: 100px;
+    padding: 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .gedung-kiri,
+  .gedung-kanan {
+    width: 220px;
+  }
+
+  header {
+    left: 1rem;
+    transform: translateX(0);
+  }
+
+  #startBtn {
+    padding: 14px 1.5rem;
+    font-size: 16px;
+  }
+
+  #quiz {
+    padding: 4rem 1.5rem 0;
+  }
+
+  #questionText {
+    font-size: 16px;
+  }
+
+  .answer-btn {
+    max-width: 100%;
+    height: auto;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  #result, #jobResult {
+    padding: 30px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 0.8rem;
+  }
+
+  .gedung-kiri,
+  .gedung-kanan {
+    width: 150px;
+    opacity: 0.8;
+  }
+
+  #startBtn {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 1.2rem;
+    font-size: 15px;
+  }
+
+  .progress {
+    height: 14px;
+  }
+
+  #questionText {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .answer-btn {
+    font-size: 13px;
+    padding: 12px 10px;
+    border-radius: 14px;
+  }
+
+  #result h5 {
+    font-size: 18px;
+  }
+
+  #result button,
+  #jobResult button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  #jobResult .job-image {
+    height: 100px;
+  }
+  
+  #result .card-body, #jobResult .card-body{
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  #jobResult h5 {
+    font-size: 18px;
+  }
+
+  #result p, #jobResult p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
 }

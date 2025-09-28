@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JobSeeker</title>
+    <title>Sikerir - Siap Kerja!</title>
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font -->
@@ -33,23 +33,23 @@
     />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logo_sikerir.png" type="image/x-icon" />
   </head>
 
   <body>
     <!-- NAVBAR -->
     <header>
         <i class="bx bx-menu" id="menu-icon"></i>
-        <a href="#" class="logo"><img src="images/shape-square.svg" alt="" /></a>
+        <a href="#" class="logo"><img src="images/logo_sikerir.png" alt="" /></a>
         <nav class="navbar navbar-custom">
         <ul>
             <li><a href="#tentang-kami">Tentang</a></li>
             <li><a href="cv-builder.html">CV Builder</a></li>
-            <a href="#" class="inner-logo">
-            <img src="images/shape-square.svg" alt="" />
+            <a href="index.html" class="inner-logo">
+            <img src="images/logo_sikerir.png" alt="" />
             </a>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Webinar</a></li>
+            <li><a href="quiz.html">Tes Minat</a></li>
         </ul>
       </nav>
     </header>
@@ -214,8 +214,9 @@
     <section id="tentang-kami">
       <h2 class="title">Tentang Kami</h2>
 
-      <div class="about">
-        <div class="about-visual">
+      <div class="about flex-column flex-lg-row ">
+        <div class="about-visual visual-col">
+          <!-- https://unsplash.com/id/foto/seseorang-yang-mengenakan-topi-dan-gaun-kelulusan-memegang-ijazah-2zCbmmEqLpM -->
           <img
             src="images/about-person.png"
             alt="Graduate"
@@ -237,14 +238,15 @@
           </div>
         </div>
 
-        <div class="about-content">
-          <h1>
-            Kerja <span class="span">Pertama</span>,<br />
-            Gak Pake <span class="highlight">Ribet.</span>
-          </h1>
+        <div class="about-content content-col">
+          <h2>
+            Kenalan Sama <span class="highlight">Sikerir</span>
+          </h2>
           <p>
-            Platform job seeking yang khusus buat lulusan SMK! Cari kerja sesuai
-            jurusan, dapet peluang nyata, langsung mulai kariermu.
+            Sikerir hadir sebagai platform khusus untuk lulusan SMK.
+            Kami percaya setiap anak SMK punya potensi besar untuk sukses.
+            Di sini, kamu bisa temukan lowongan sesuai jurusan, partner yang siap merekrut, serta tools pendukung seperti CV builder dan webinar.
+            <br><br>Misi kami sederhana: bantu kamu mulai karier lebih cepat, lebih mudah, dan lebih tepat.
           </p>
         </div>
       </div>
@@ -254,25 +256,31 @@
     <section id="fitur" class="container-fluid py-5">
     <h2 class="title text-center mb-5">Fitur</h2>
 
-  <div class="row justify-content-center align-items-stretch">
+  <div class="row justify-content-center gap-3 gap-md-0">
     <!-- Left Cards -->
-    <div class="col-md-3 d-flex flex-column justify-content-between">
-      <div class="card-fitur mb-3">
-        <div class="card-icon"></div>
-        <h3>Cari Minatmu!</h3>
-        <p>Temukan passion yang kamu suka</p>
-        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
+    <div class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-2 order-lg-1">
+    <a href="quiz.html" class="card-fitur-link"> 
+      <div class="card-fitur my-md-3">
+            <div class="card-icon">
+                <i class="bx bx-compass"></i> 
+            </div>
+            <h3>Cari Minatmu!</h3>
+            <p>Temukan passion yang kamu suka</p>
       </div>
-      <div class="card-fitur">
-        <div class="card-icon"></div>
-        <h3>Build CV</h3>
-        <p>Buat CV profesional dengan mudah</p>
-        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
-      </div>
+    </a>
+    <a href="cv-builder.html" class="card-fitur-link">
+        <div class="card-fitur my-md-3">
+            <div class="card-icon">
+                <i class='bx bx-book-content'></i>
+            </div>
+            <h3>Build CV</h3>
+            <p>Buat CV profesional dengan mudah</p>
+        </div>
+    </a>
     </div>
 
     <!-- Phone -->
-    <div class="col-md-6 d-flex justify-content-center">
+    <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center order-1 order-lg-2">
       <div class="phone-wrapper">
         <img src="images/tanda-tanya.png" alt="Background" class="bg-question" />
         <img src="images/phone.png" alt="Phone" class="phone-img" />
@@ -284,27 +292,31 @@
     </div>
 
     <!-- Right Cards -->
-    <div class="col-md-3 d-flex flex-column justify-content-between">
-      <div class="card-fitur mb-3">
-        <div class="card-icon"></div>
-        <h3>Webinar</h3>
-        <p>Belajar skill baru dari mentor</p>
-        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
-      </div>
-      <div class="card-fitur">
-        <div class="card-icon"></div>
-        <h3>Job Seeker</h3>
-        <p>Cari dan lamar kerja cepat</p>
-        <a href="#" class="arrow"><i class="bx bx-up-right-arrow-alt"></i></a>
-      </div>
-    </div>
-  </div>
+    <div class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-3 order-lg-3">
+
+      <a href="#" class="card-fitur-link">
+        <div class="card-fitur my-md-3">
+            <div class="card-icon">
+                <i class="bx bx-slideshow"></i>
+            </div>
+            <h3>Webinar</h3>
+            <p>Belajar skill baru dari mentor</p>
+        </div>
+    </a>
+    <a href="#karir" class="card-fitur-link">
+        <div class="card-fitur my-md-3">
+            <div class="card-icon">
+                <i class="bx bx-briefcase"></i> 
+            </div>
+            <h3>Job Finder</h3>
+            <p>Cari dan lamar kerja cepat</p>
+        </div>
+    </a>
+  </div> 
 </section>
 
 
-
     <!-- KARIR -->
-
     <section id="karir" class="position-relative">
       <!-- Background Radial -->
       <div class="karir-bg"></div>
@@ -314,20 +326,20 @@
         Temukan karir yang paling sesuai untuk kamu
       </h2>
       <p class="karir-content text-center w-75 light-grey mx-auto">
-        Magenta menawarkan berbagai peluang yang sesuai dengan keterampilan dan
+        Sikerir menawarkan berbagai peluang yang sesuai dengan keterampilan dan
         ambisi Kamu. Daftar hari ini dan ambil langkah berikutnya menuju karier
         Impian. Masa depan Kamu dimulai di sini.
       </p>
 
       <!-- FORM FILTER -->
       <div class="container mt-4">
-        <form class="bg-white p-3 rounded shadow-sm">
+        <form class="bg-white p-3 rounded shadow-sm ">
           <div class="row g-2 align-items-center text-center">
-            <div class="col">
+            <div class="col-12 col-md">
               <input type="text" class="form-control" placeholder="Posisi" />
             </div>
 
-            <div class="col">
+            <div class="col-12 col-md">
               <select class="form-select">
                 <option selected>Perusahaan</option>
                 <option>Perusahaan A</option>
@@ -335,7 +347,7 @@
               </select>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-md">
               <select class="form-select">
                 <option selected>Lokasi</option>
                 <option>Jakarta</option>
@@ -343,7 +355,7 @@
               </select>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-md">
               <select class="form-select">
                 <option selected>Jurusan</option>
                 <option>Teknik</option>
@@ -351,7 +363,7 @@
               </select>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-md">
               <select class="form-select">
                 <option selected>Jenjang Pendidikan</option>
                 <option>SMA/SMK</option>
@@ -360,10 +372,10 @@
               </select>
             </div>
 
-            <div class="col-auto">
+            <div class="col-12 col-md-auto">
               <button
                 type="submit"
-                class="btn btn-teal d-flex align-items-center justify-content-center"
+                class="btn btn-teal w-100 w-md-auto d-flex align-items-center justify-content-center"
               >
                 <i class="bi bi-search"></i>
               </button>
@@ -372,11 +384,12 @@
         </form>
       </div>
 
+
       <!-- CARD -->
       <div class="container mt-5">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- Card 1 -->
-          <div class="col d-flex">
+          <div class="col d-flex loker">
             <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
               <div class="card-body">
                 <!-- Logo -->
@@ -384,7 +397,7 @@
                   <img
                     src="images/pelindo-logo.png"
                     alt="Pelindo Logo"
-                    style="height: 32px"
+                    style="height: 32px;"
                   />
                 </div>
                 <!-- Perusahaan -->
@@ -403,13 +416,13 @@
                 <!-- Badge -->
                 <div class="mb-3">
                   <span
-                    class="badge rounded-pill px-3 py-2 text-success border border-success"
+                    class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
                     style="background-color: #d1fadf"
                   >
                     Umum
                   </span>
                   <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 me-2"
+                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2"
                     >2 Bulan</span
                   >
                   <span
@@ -439,14 +452,14 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="col d-flex">
+          <div class="col d-flex loker">
             <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
               <div class="card-body">
                 <div class="mb-4">
                   <img
                     src="images/propertree logo.png"
                     alt="Propertree Logo"
-                    style="height: 32px"
+                    style="height: 32px; object-fit: contain; max-width: 100%;"
                   />
                 </div>
                 <h6 class="light-grey mb-2">PT. Propertree Investa Cendekia</h6>
@@ -458,13 +471,13 @@
                 </p>
                 <div class="mb-3">
                   <span
-                    class="badge rounded-pill px-3 py-2 text-success border border-success"
+                    class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
                     style="background-color: #d1fadf"
                   >
                     Umum
                   </span>
                   <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 me-2"
+                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2"
                     >2 Bulan</span
                   >
                   <span
@@ -491,14 +504,14 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="col d-flex">
+          <div class="col d-flex loker">
             <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
               <div class="card-body">
                 <div class="mb-4">
                   <img
                     src="images/goto logo.png"
                     alt="GoTo Logo"
-                    style="height: 32px"
+                    style="height: 32px;"
                   />
                 </div>
                 <h6 class="light-grey mb-2">PT. GoTo Group</h6>
@@ -510,13 +523,13 @@
                 </p>
                 <div class="mb-3">
                   <span
-                    class="badge rounded-pill px-3 py-2 text-success border border-success"
+                    class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
                     style="background-color: #d1fadf"
                   >
                     Umum
                   </span>
                   <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 me-2"
+                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2"
                     >2 Bulan</span
                   >
                   <span
@@ -544,6 +557,7 @@
         </div>
       </div>
     </section>
+    
 
     <!-- SPONSOR  -->
     <section id="sponsor">
@@ -620,73 +634,86 @@
       </div>
     </section>
 
-    <section class="container my-5">
-    <div class="cv-section">
-      <!-- Gambar background -->
-      <img src="images/background-cv.png" alt="Background CV Section">
 
-      <!-- Teks di atas gambar -->
-      <div class="cv-text">
-        <h1>Yuk <u>UBAH CV MU SEKARANG!</u> Supaya cepat dilirik perusahaan</h1>
-        <p>Di Kerir, kamu bisa langsung punya CV profesional yang siap dipakai apply ke berbagai perusahaan. Cukup masukkan data, dan Kerir otomatis bikin CV yang bisa langsung kamu export!</p>
-        <a href="webinar.html" class="btn-white px-4 py-2" >
-          Post a Job
-        </a>
+<section class="container my-5">
+    <div class="cv-section p-4 p-md-5">
+      
+      <div class="row align-items-center">
+        
+        <div class="col-md-7 col-lg-8 text-white text-center text-md-start">
+          
+          <h1 class="fw-bold mb-3 cv-title">
+            Yuk <u>UBAH CV MU SEKARANG!</u> Supaya cepat dilirik perusahaan
+          </h1>
+          
+          <p class="lead mb-4 cv-description">
+            Di Sikerir, kamu bisa langsung punya CV profesional yang siap dipakai apply ke berbagai perusahaan. Cukup masukkan data, dan Sikerir otomatis bikin CV yang bisa langsung kamu export!
+          </p>
+          
+          <a href="cv-builder.html" class="btn-white px-4 py-2 mt-2 d-inline-block">
+            Buat CV
+          </a>
+          
+        </div>
+
+        <div class="col-md-5 col-lg-4 d-none d-md-block">
+            </div>
+
       </div>
     </div>
-  </section>
+</section>
 
   <!-- CTA -->
-
   <section class="cta-footer text-center">
   <div class="container">
-    <div class="card shadow-lg border-0 py-4 px-5 mx-auto" style="max-width: 800px; border-radius: 10px;">
+    <div class="card shadow-lg border-0 py-4 px-5 mx-auto " style="max-width: 800px; border-radius: 10px;">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <h4 class="mb-3 mb-md-0 fw-bold me-5">
-          Does your company needs great employees?
+        <h4 class="mb-3 me-md-5 mb-md-0 fw-bold">
+          Kamu lagi cari kandidat berkualitas?
         </h4>
-        <a href="#" class="btn-explore text-white px-4 py-2" >
-          Post a Job
+        <a href="#" class="btn-explore px-4 py-2" >
+          Buka Loker di Sini
         </a>
       </div>
     </div>
   </div>
 </section>
-
 <!-- Footer -->
 
 <footer class="footer text-white ">
   <div class="container py-5">
-    <div class="row justify-content-center gy-5">
+    <div class="row justify-content-center gy-3 pt-4">
       <!-- Logo -->
       <div class="col-md-3 mb-4">
-        <div class="d-flex flex-column align-items-center">
-          <img src="images/logo_siker.png" class="mb-2 w-25" alt="logo">
-          <h3 class="fw-bold mb-0">Siker</h3>
+        <div class="d-flex flex-column align-items-center align-items-md-start">
+          <img src="images/logo_sikerir.png" class="mb-2 w-25" alt="logo">
+          <h3 class="fw-bold mb-0">Sikerir</h3>
         </div>
       </div>
 
       <!-- Links -->
       <div class="col-md-3 mb-4">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled text-center text-md-start row g-2">
           <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-white text-decoration-none">CV Builder</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Course</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Feedback</a></li>
+          <li><a href="cv-builder.html" class="text-white text-decoration-none">CV Builder</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Webinar</a></li>
+          <li><a href="quiz.html" class="text-white text-decoration-none">Tes Minat</a></li>
           <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
         </ul>
       </div>
 
-      <!-- Newsletter -->
-     <div class="col-md-3 mb-4">
-  <p>Daftarkan email kamu untuk berlangganan di Kerir dan selalu dapatkan info lowongan kerja terbaru!</p>
+<div class="col-md-3 mb-4">
+  <p class="text-center text-md-start">Daftarkan email kamu untuk berlangganan di Sikerir dan selalu dapatkan info lowongan kerja terbaru!</p>
   <form>
-    <div class="email-input-wrapper">
+    <div class="input-group email-subscribe-group"> 
       <input 
         type="email" 
         class="form-control email-input" 
         placeholder="Masukkan email kamu">
-      <i class="bi bi-envelope email-icon"></i>
+      
+      <a href="#" class="email-icon-btn d-flex d-md-none d-lg-flex">
+        <i class="bi bi-envelope"></i>
+      </a>
     </div>
   </form>
 </div>
@@ -695,20 +722,9 @@
     </div>
   </div>
   <div class="text-center py-3 border-top border-light">
-    <small>Copyright © 2024 Mansi C. All rights reserved</small>
+    <small>Copyright © 2025 Topcerr. All rights reserved</small>
   </div>
 </footer>
-
-
-
-
-
-
-
-
-    
-
-    
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>

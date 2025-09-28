@@ -1,0 +1,369 @@
+:root {
+    --primary-color: #1b1b1b;
+    --bg-color: #FDF8E3;
+    --green-color: #01B7AB;
+    --purple-color: #5D5BFF;
+    --yellow-color: #FDB725;
+    --orange-color: #FD8A25;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--primary-color);
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* HEADER */
+.logo img {
+  width: 40px;
+  height: 40px;
+  cursor: default;
+  display: none;
+}
+
+#menu-icon {
+  font-size: 2.3rem;
+  color: var(--bg-color);
+  display: none;
+}
+
+header {
+  top: 20px;
+  width: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em 2em;
+  background-color: var(--purple-color);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px #4848be55;
+  transition: all 0.3s ease;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a,
+.navbar ul li a:visited {
+  width: auto;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.navbar ul li a:hover {
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.navbar ul img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    display: block;
+    width: 100%;
+  }
+
+  header {
+    min-width: 15%;
+    width: auto;
+    padding: 0.7rem;
+    gap: 1rem;
+    left: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateX(0);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute !important;
+    border-radius: 16px;
+    left: 0;
+    top: 110%;
+    width: 140%;
+    padding: 1rem 3%;
+    opacity: 0;
+    background: var(--purple-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar.active {
+    opacity: 100;
+    display: block;
+
+    .inner-logo {
+      display: none;
+    }
+  }
+
+  .navbar .inner-logo {
+    display: none;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .navbar ul li a {
+    display: block;
+    margin: 0.8rem 0;
+    text-align: center;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
+
+/* CV BUILDER */
+.cv-builder-container {
+  display: flex;
+  background: #fdfaec;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8em 3em;
+}
+.cv-form-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e6dec5;
+}
+
+.nav-pills-custom {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  gap: 0.2rem;
+}
+
+.nav-pills-custom .nav-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-pills-custom .nav-link {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.4rem 1rem;
+}
+
+.nav-pills-custom .nav-link.active {
+  background-color: var(--green-color);
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-pills-custom .nav-link:hover:not(.active) {
+  background-color: #dcdfe3;
+  color: #495057;
+}
+
+.tab-content,
+.tab-content div div input,
+.tab-content div div textarea,
+.tab-content div div select {
+  font-size: 14px;
+}
+
+.tab-content {
+  font-weight: 700;
+}
+
+.btn-add {
+  background-color: var(--green-color);
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 0.4rem 1rem;
+  border: none;
+}
+.btn-add:hover {
+  background-color: #00aa9e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.127);
+  transform: translateY(-2px);
+}
+
+/* Preview CV */
+.cv-preview-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e6dec5;
+}
+
+.resume-header {
+  background-color: #5d5bff;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.resume-header h1 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-item .bx {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.section-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.experience-item,
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-item h6,
+.education-item h6 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.experience-item p,
+.education-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.skill-badge {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.experience-list {
+  list-style: disc !important;
+  padding-left: 20px;
+}
+
+/* Color Swatch */
+.color-swatch {
+  width: 25px;
+  height: 25px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color-swatch.active {
+  border-color: #333;
+  transform: scale(1.1);
+}
+
+.color-swatch:hover:not(.active) {
+  border-color: #ccc;
+  transform: scale(1.1);
+}
+
+.btn-export {
+  background-color: var(--yellow-color);
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 0.4rem 1rem;
+  border: none;
+}
+.btn-export:hover {
+  background-color: #eeaa16;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.127);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .cv-builder-container {
+        padding: 8em 2em;
+    }
+}
