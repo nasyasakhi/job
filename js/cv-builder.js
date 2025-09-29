@@ -92,16 +92,16 @@ document.getElementById("addEducation").addEventListener("click", () => {
         </div>
         <div class="row g-3">
             <div class="col-md-6">
-                <label for="degree-${educationCount}" class="form-label">Degree</label>
+                <label for="degree-${educationCount}" class="form-label">Jurusan</label>
                 <input type="text" class="form-control edu-degree" id="degree-${educationCount}" placeholder="Bachelor of Science">
             </div>
             <div class="col-md-6">
                 <label for="institution-${educationCount}" class="form-label">Institusi</label>
-                <input type="text" class="form-control edu-institution" id="institution-${educationCount}" placeholder="University of Technology">
+                <input type="text" class="form-control edu-institution" id="institution-${educationCount}" placeholder="SMK IDN">
             </div>
             <div class="col-md-6">
                 <label for="location-${educationCount}" class="form-label">Lokasi</label>
-                <input type="text" class="form-control edu-location" id="location-${educationCount}" placeholder="Boston, MA">
+                <input type="text" class="form-control edu-location" id="location-${educationCount}" placeholder="Bogor, Jawa Barat">
             </div>
             <div class="col-md-6">
                 <label for="graduationDate-${educationCount}" class="form-label">Tanggal Lulus</label>

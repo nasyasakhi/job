@@ -48,7 +48,7 @@
             <a href="index.html" class="inner-logo">
             <img src="images/logo_sikerir.png" alt="" />
             </a>
-            <li><a href="#">Webinar</a></li>
+            <li><a href="webinar.html">Webinar</a></li>
             <li><a href="quiz.html">Tes Minat</a></li>
         </ul>
       </nav>
@@ -294,7 +294,7 @@
     <!-- Right Cards -->
     <div class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-3 order-lg-3">
 
-      <a href="#" class="card-fitur-link">
+      <a href="webinar.html" class="card-fitur-link">
         <div class="card-fitur my-md-3">
             <div class="card-icon">
                 <i class="bx bx-slideshow"></i>
@@ -680,40 +680,69 @@
 </section>
 <!-- Footer -->
 
-<footer class="footer text-white ">
+<footer class="footer text-white">
   <div class="container py-5">
-    <div class="row justify-content-center gy-3 pt-4">
-      <!-- Logo -->
+    <div class="row justify-content-center gy-3 gx-5 pt-4">
+
+      <!-- Brand + Sosial Media (1 baris) -->
       <div class="col-md-3 mb-4">
-        <div class="d-flex flex-column align-items-center align-items-md-start">
-          <img src="images/logo_sikerir.png" class="mb-2 w-25" alt="logo">
-          <h3 class="fw-bold mb-0">Sikerir</h3>
+  <div class="d-flex flex-column align-items-center align-items-md-start">
+    <!-- Logo + Nama -->
+    <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3"> <img src="images/logo_sikerir.png" class="footer-logo me-2" alt="Sikerir Logo"> <h3 class="fw-bold mb-0 text-white">Sikerir</h3> </div>
+
+    <!-- Sosial Media -->
+    <div class="text-center text-md-start w-100">
+  <span class="fw-bold d-block mb-2">Sosial Media:</span>
+  <div class="d-flex justify-content-center justify-content-md-start gap-2">
+    <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="social-circle"><i class="bi bi-twitter-x"></i></a>
+    <a href="#" class="social-circle"><i class="bi bi-youtube"></i></a>
+    <a href="#" class="social-circle"><i class="bi bi-linkedin"></i></a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+      <!-- Links -->
+      <div class="col-md-5 mb-4">
+        <div class="row g-3">
+          <div class="col-6 col-md-6">
+            <a href="#" class="footer-card">
+              TENTANG <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="col-6 col-md-6">
+            <a href="cv-builder.html" class="footer-card">
+              CV BUILDER <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="col-6 col-md-6">
+            <a href="#" class="footer-card">
+              WEBINAR <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="col-6 col-md-6">
+            <a href="quiz.html" class="footer-card">
+              TES MINAT <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Links -->
+      <!-- Newsletter -->
       <div class="col-md-3 mb-4">
-        <ul class="list-unstyled text-center text-md-start row g-2">
-          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="cv-builder.html" class="text-white text-decoration-none">CV Builder</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Webinar</a></li>
-          <li><a href="quiz.html" class="text-white text-decoration-none">Tes Minat</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
-        </ul>
-      </div>
-
-<div class="col-md-3 mb-4">
-  <p class="text-center text-md-start">Daftarkan email kamu untuk berlangganan di Sikerir dan selalu dapatkan info lowongan kerja terbaru!</p>
+  <p class="text-center text-md-start">
+    Daftarkan email kamu untuk berlangganan di Sikerir dan selalu dapatkan info lowongan kerja terbaru!
+  </p>
   <form>
-    <div class="input-group email-subscribe-group"> 
+    <div class="email-input-wrapper">
       <input 
         type="email" 
-        class="form-control email-input" 
+        class="form-control email-input-with-icon" 
         placeholder="Masukkan email kamu">
-      
-      <a href="#" class="email-icon-btn d-flex d-md-none d-lg-flex">
-        <i class="bi bi-envelope"></i>
-      </a>
+      <i class="bi bi-envelope email-icon-inside"></i>
     </div>
   </form>
 </div>
@@ -725,6 +754,7 @@
     <small>Copyright © 2025 Topcerr. All rights reserved</small>
   </div>
 </footer>
+
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>

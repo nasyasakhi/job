@@ -1,0 +1,368 @@
+:root {
+    --primary-color: #1b1b1b;
+    --bg-color: #FDF8E3;
+    --green-color: #01B7AB;
+    --purple-color: #5D5BFF;
+    --yellow-color: #FDB725;
+    --orange-color: #FD8A25;
+    --gray-color: #5C5C5C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--primary-color);
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 90px; 
+}
+
+/* HEADER */
+.logo img {
+  width: 40px;
+  height: 40px;
+  cursor: default;
+  display: none;
+}
+
+#menu-icon {
+  font-size: 2.3rem;
+  color: var(--bg-color);
+  display: none;
+}
+
+header {
+  top: 20px;
+  width: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em 2em;
+  background-color: var(--purple-color);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px #4848be55;
+  transition: all 0.3s ease;
+  height: 70px; /* 👉 tambahin tinggi fix */
+}
+
+
+
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a,
+.navbar ul li a:visited {
+  width: auto;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.navbar ul li a:hover {
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.navbar ul img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    display: block;
+    width: 100%;
+  }
+
+  header {
+    min-width: 15%;
+    width: auto;
+    padding: 0.7rem;
+    gap: 1rem;
+    left: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateX(0);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute !important;
+    border-radius: 16px;
+    left: 0;
+    top: 110%;
+    width: 140%;
+    padding: 1rem 3%;
+    opacity: 0;
+    background: var(--purple-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar.active {
+    opacity: 100;
+    display: block;
+
+    .inner-logo {
+      display: none;
+    }
+  }
+
+  .navbar .inner-logo {
+    display: none;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .navbar ul li a {
+    display: block;
+    margin: 0.8rem 0;
+    text-align: center;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
+
+/* WEBINAR */
+.event-card {
+  border: none;
+border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.event-info i{
+  color: var(--green-color);
+}
+
+.event-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-card .card-body {
+  padding: 20px;
+}
+
+.event-card .btn {
+  border-radius: 5px;
+  background-color: #01B7AB;
+  border: none;
+}
+
+.card-text{
+  color: var(--gray-color);
+  opacity: 70%;
+}
+
+.btn-explore {
+  position: relative;
+  overflow: hidden;
+  background: var(--green-color);
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease;
+  z-index: 0;
+  border-bottom: 3px solid transparent;
+}
+
+.btn-explore::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease;
+  z-index: -1;
+}
+
+.btn-explore:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+.btn-explore:hover {
+  color: var(--green-color);
+  border-bottom: 3px solid var(--green-color);
+}
+
+/* FOOTER */
+
+.cta-footer {
+  margin-bottom: -20px; /* biar nimpa ke atas footer */
+  position: relative;
+  z-index: 2;
+}
+.footer {
+  width: 100%;
+  background: var(--green-color);
+  position: relative;
+  z-index: 1;
+}
+
+.footer a {
+  transition: 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.btn-white {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  color: var(--green-color);
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease;
+  z-index: 0;
+  border-bottom: 3px solid transparent;
+}
+
+.btn-white::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: var(--purple-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease;
+  z-index: -1;
+}
+
+.btn-white:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+.btn-white:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+/* wrapper agar position relative */
+.email-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* input dengan padding kanan lebih besar */
+.email-input-with-icon {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding-right: 45px; /* kasih space untuk icon */
+}
+
+/* icon di kanan dalam input */
+.email-icon-inside {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--green-color); /* warna icon */
+  pointer-events: none; /* supaya klik icon tidak ganggu input */
+}
+
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; 
+  color: var(--primary-color); 
+  font-weight: 600;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.footer-card i {
+  color: var(--green-color);
+  font-size: 1.2rem;
+}
+
+.footer-card:hover {
+  transform: translateY(-2px);
+}
+
+.footer-logo {
+  width: 50px;
+}
+
+.social-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: var(--green-color);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
