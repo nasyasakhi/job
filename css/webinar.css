@@ -1,30 +1,30 @@
 :root {
-    --primary-color: #1b1b1b;
-    --bg-color: #FDF8E3;
-    --green-color: #01B7AB;
-    --purple-color: #5D5BFF;
-    --yellow-color: #FDB725;
-    --orange-color: #FD8A25;
-    --gray-color: #5C5C5C;
+  --primary-color: #1b1b1b;
+  --bg-color: #FDF8E3;
+  --green-color: #01B7AB;
+  --purple-color: #5D5BFF;
+  --yellow-color: #FDB725;
+  --orange-color: #FD8A25;
+  --gray-color: #5C5C5C;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
-    color: var(--primary-color);
-    font-family: "DM Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 90px; 
+  overflow-x: hidden;
+  color: var(--primary-color);
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 90px;
 }
 
 /* HEADER */
@@ -167,7 +167,7 @@ header {
   transition: all 0.3s ease;
 }
 
-.event-info i{
+.event-info i {
   color: var(--green-color);
 }
 
@@ -191,7 +191,7 @@ header {
   border: none;
 }
 
-.card-text{
+.card-text {
   color: var(--gray-color);
   opacity: 70%;
 }
@@ -252,9 +252,9 @@ header {
 }
 
 .email-subscribe-group {
-    border-radius: 10px; 
-    overflow: hidden;
-    position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
 .email-input {
@@ -265,39 +265,38 @@ header {
 }
 
 .email-icon-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px; 
-    height: 50px; 
-    background-color: white; 
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    border: none;
-    padding: 0;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  padding: 0;
 }
 
 .email-icon-btn i {
-    color: var(--green-color); 
-    font-size: 20px;
+  color: var(--green-color);
+  font-size: 20px;
 }
 
 .email-icon-btn:hover {
-    background-color: #e2f4f3;
+  background-color: #e2f4f3;
 }
 
 .email-icon-btn:active,
 .email-icon-btn:focus {
-    background-color: #c9e9e7;
+  background-color: #c9e9e7;
 }
 
 .footer-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff; 
-  color: var(--primary-color); 
+  background-color: #fff;
+  color: var(--primary-color);
   font-weight: 600;
   text-decoration: none;
   padding: 20px;

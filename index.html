@@ -1,774 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sikerir - Siap Kejar Karier!</title>
-    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sikerir - Siap Kejar Karier!</title>
+  <link rel="stylesheet" href="css/style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
 
-    <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/logo_sikerir.png" type="image/x-icon" />
-  </head>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- NAVBAR -->
-    <header>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <a href="#" class="logo"><img src="images/logo_sikerir.png" alt="" /></a>
-        <nav class="navbar navbar-custom">
-        <ul>
-            <li><a href="#tentang-kami">Tentang</a></li>
-            <li><a href="cv-builder.html">CV Builder</a></li>
-            <a href="index.html" class="inner-logo">
-            <img src="images/logo_sikerir.png" alt="" />
-            </a>
-            <li><a href="webinar.html">Webinar</a></li>
-            <li><a href="quiz.html">Tes Minat</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <!-- HERO SECTION -->
-    <section id="hero">
-      <img
-        src="images/bg-gradient-circle.png"
-        alt="Gradient Circle"
-        class="bg-circle"
-      />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/logo_sikerir.png" type="image/x-icon" />
+</head>
 
-      <div class="hero-content">
-        <h1>
-          Kerja <span class="span">Pertama</span>,<br />Gak Pake
-          <span class="highlight">Ribet.</span>
-        </h1>
-        <p>
-          Platform job seeking yang khusus buat lulusan SMK! Cari kerja sesuai
-          jurusan, dapet peluang nyata, langsung mulai kariermu.
-        </p>
-        <a href="#trust-stats" class="btn-explore">Explore Now!</a>
-      </div>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <a href="#" class="logo"><img src="images/logo_sikerir.png" alt="" /></a>
+    <nav class="navbar navbar-custom">
+      <ul>
+        <li><a href="#tentang-kami">Tentang</a></li>
+        <li><a href="cv-builder.html">CV Builder</a></li>
+        <a href="index.html" class="inner-logo">
+          <img src="images/logo_sikerir.png" alt="" />
+        </a>
+        <li><a href="webinar.html">Webinar</a></li>
+        <li><a href="quiz.html">Tes Minat</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <div class="hero-visual">
-        <!-- Image Source : https://unsplash.com/id/foto/seorang-pria-mengenakan-topi-dan-gaun-kelulusan-memegang-ijazah-Duym6-LBz4E -->
-        <img src="images/hero-person.png" alt="Graduate" class="person" />
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <img src="images/bg-gradient-circle.png" alt="Gradient Circle" class="bg-circle" />
 
-        <img
-          src="images/shape-triangle.svg"
-          alt="triangle"
-          class="shape shape-triangle"
-        />
-        <img
-          src="images/shape-square.svg"
-          alt="square"
-          class="shape shape-square"
-        />
-        <img
-          src="images/shape-zig.svg"
-          alt="zigzag shape"
-          class="shape shape-zig"
-        />
-      </div>
-    </section>
-
-    <div class="marquee">
-      <div class="marquee-content">
-        <span>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
-              fill="black"
-            />
-          </svg>
-          Career interest test
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
-              fill="black"
-            />
-          </svg>
-        </span>
-        <span>
-          SMK-focused jobs
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
-              fill="black"
-            />
-          </svg>
-        </span>
-        <span>
-          Free CV builder
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
-              fill="black"
-            />
-          </svg>
-        </span>
-        <span>
-          Job-ready webinars
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
-              fill="black"
-            />
-          </svg>
-        </span>
-        <span>
-          Weekly opportunities
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
-              fill="black"
-            />
-          </svg>
-        </span>
-      </div>
+    <div class="hero-content">
+      <h1>
+        Kerja <span class="span">Pertama</span>,<br />Gak Pake
+        <span class="highlight">Ribet.</span>
+      </h1>
+      <p>
+        Platform job seeking yang khusus buat lulusan SMK! Cari kerja sesuai
+        jurusan, dapet peluang nyata, langsung mulai kariermu.
+      </p>
+      <a href="#trust-stats" class="btn-explore">Explore Now!</a>
     </div>
 
-    <!-- STATS -->
-    <section class="trust" id="trust-stats">
-      <div class="trust-text">
-        <p>Trusted by <br /><strong>SMK Talent</strong></p>
+    <div class="hero-visual">
+      <!-- Image Source : https://unsplash.com/id/foto/seorang-pria-mengenakan-topi-dan-gaun-kelulusan-memegang-ijazah-Duym6-LBz4E -->
+      <img src="images/hero-person.png" alt="Graduate" class="person" />
+
+      <img src="images/shape-triangle.svg" alt="triangle" class="shape shape-triangle" />
+      <img src="images/shape-square.svg" alt="square" class="shape shape-square" />
+      <img src="images/shape-zig.svg" alt="zigzag shape" class="shape shape-zig" />
+    </div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-content">
+      <span>
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+            fill="black" />
+        </svg>
+        Career interest test
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+            fill="black" />
+        </svg>
+      </span>
+      <span>
+        SMK-focused jobs
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+            fill="black" />
+        </svg>
+      </span>
+      <span>
+        Free CV builder
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+            fill="black" />
+        </svg>
+      </span>
+      <span>
+        Job-ready webinars
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+            fill="black" />
+        </svg>
+      </span>
+      <span>
+        Weekly opportunities
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 0L18.0902 10.2571L26.2846 3.74329L21.2927 12.9443L31.7569 13.2216L22.0186 17.0612L29.8564 24L19.9284 20.6816L21.4723 31.0351L16 22.1115L10.5277 31.0351L12.0716 20.6816L2.14359 24L9.98139 17.0612L0.243076 13.2216L10.7073 12.9443L5.7154 3.74329L13.9098 10.2571L16 0Z"
+            fill="black" />
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="trust" id="trust-stats">
+    <div class="trust-text">
+      <p>Trusted by <br /><strong>SMK Talent</strong></p>
+    </div>
+
+    <div class="trust-stats">
+      <div class="stat-box">
+        <h3><span class="count" data-target="90">0</span>K+</h3>
+        <p>Anak SMK join</p>
+      </div>
+      <div class="stat-box">
+        <h3><span class="count" data-target="500">0</span>+</h3>
+        <p>Partner siap rekrut</p>
+      </div>
+      <div class="stat-box">
+        <h3><span class="count" data-target="1200">0</span>+</h3>
+        <p>Lowongan aktif</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="tentang-kami">
+    <h2 class="title">Tentang Kami</h2>
+
+    <div class="about flex-column flex-lg-row ">
+      <div class="about-visual visual-col">
+        <!-- Image Source : https://unsplash.com/id/foto/seseorang-yang-mengenakan-topi-dan-gaun-kelulusan-memegang-ijazah-2zCbmmEqLpM -->
+        <img src="images/about-person.png" alt="Graduate" class="about-person" />
+
+        <!-- card kiri -->
+        <div class="info-card job">
+          <p>Terverifikasi</p>
+          <h2>250+</h2>
+          <p>Postingan Job/Hari</p>
+        </div>
+
+        <!-- card kanan bawah -->
+        <div class="info-card user">
+          <p>Terverifikasi</p>
+          <h2>10K</h2>
+          <p>Pengguna</p>
+        </div>
       </div>
 
-      <div class="trust-stats">
-        <div class="stat-box">
-          <h3><span class="count" data-target="90">0</span>K+</h3>
-          <p>Anak SMK join</p>
-        </div>
-        <div class="stat-box">
-          <h3><span class="count" data-target="500">0</span>+</h3>
-          <p>Partner siap rekrut</p>
-        </div>
-        <div class="stat-box">
-          <h3><span class="count" data-target="1200">0</span>+</h3>
-          <p>Lowongan aktif</p>
-        </div>
+      <div class="about-content content-col">
+        <h2>
+          Kenalan Sama <span class="highlight">Sikerir</span>
+        </h2>
+        <p>
+          Sikerir hadir sebagai platform khusus untuk lulusan SMK.
+          Kami percaya setiap anak SMK punya potensi besar untuk sukses.
+          Di sini, Kamu bisa temukan lowongan sesuai jurusan, partner yang siap merekrut, serta tools pendukung seperti
+          CV builder dan webinar.
+          <br><br>Misi kami sederhana: bantu Kamu mulai karier lebih cepat, lebih mudah, dan lebih tepat.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT US -->
-    <section id="tentang-kami">
-      <h2 class="title">Tentang Kami</h2>
+  <!-- FITUR -->
+  <section id="fitur" class="container-fluid py-5">
+    <h2 class="title text-center mb-5">Fitur <span class="highlight">Sikerir</span></h2>
 
-      <div class="about flex-column flex-lg-row ">
-        <div class="about-visual visual-col">
-          <!-- Image Source : https://unsplash.com/id/foto/seseorang-yang-mengenakan-topi-dan-gaun-kelulusan-memegang-ijazah-2zCbmmEqLpM -->
-          <img
-            src="images/about-person.png"
-            alt="Graduate"
-            class="about-person"
-          />
-
-          <!-- card kiri -->
-          <div class="info-card job">
-            <p>Terverifikasi</p>
-            <h2>250+</h2>
-            <p>Postingan Job/Hari</p>
+    <div class="row justify-content-center gap-3 gap-md-0">
+      <!-- Left Cards -->
+      <div
+        class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-2 order-lg-1">
+        <a href="quiz.html" class="card-fitur-link">
+          <div class="card-fitur my-md-3">
+            <div class="card-icon">
+              <i class="bx bx-compass"></i>
+            </div>
+            <h3>Cari Minatmu!</h3>
+            <p>Temukan passion yang Kamu suka</p>
           </div>
-
-          <!-- card kanan bawah -->
-          <div class="info-card user">
-            <p>Terverifikasi</p>
-            <h2>10K</h2>
-            <p>Pengguna</p>
+        </a>
+        <a href="cv-builder.html" class="card-fitur-link">
+          <div class="card-fitur my-md-3">
+            <div class="card-icon">
+              <i class='bx bx-book-content'></i>
+            </div>
+            <h3>Build CV</h3>
+            <p>Buat CV profesional dengan mudah</p>
           </div>
-        </div>
-
-        <div class="about-content content-col">
-          <h2>
-            Kenalan Sama <span class="highlight">Sikerir</span>
-          </h2>
-          <p>
-            Sikerir hadir sebagai platform khusus untuk lulusan SMK.
-            Kami percaya setiap anak SMK punya potensi besar untuk sukses.
-            Di sini, Kamu bisa temukan lowongan sesuai jurusan, partner yang siap merekrut, serta tools pendukung seperti CV builder dan webinar.
-            <br><br>Misi kami sederhana: bantu Kamu mulai karier lebih cepat, lebih mudah, dan lebih tepat.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FITUR -->
-    <section id="fitur" class="container-fluid py-5">
-      <h2 class="title text-center mb-5">Fitur <span class="highlight">Sikerir</span></h2>
-
-      <div class="row justify-content-center gap-3 gap-md-0">
-        <!-- Left Cards -->
-        <div class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-2 order-lg-1">
-          <a href="quiz.html" class="card-fitur-link"> 
-            <div class="card-fitur my-md-3">
-                  <div class="card-icon">
-                      <i class="bx bx-compass"></i> 
-                  </div>
-                  <h3>Cari Minatmu!</h3>
-                  <p>Temukan passion yang Kamu suka</p>
-            </div>
-          </a>
-          <a href="cv-builder.html" class="card-fitur-link">
-              <div class="card-fitur my-md-3">
-                  <div class="card-icon">
-                      <i class='bx bx-book-content'></i>
-                  </div>
-                  <h3>Build CV</h3>
-                  <p>Buat CV profesional dengan mudah</p>
-              </div>
-          </a>
-        </div>
-
-        <!-- Phone -->
-        <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center order-1 order-lg-2">
-          <div class="phone-wrapper">
-            <img src="images/tanda-tanya.png" alt="Background" class="bg-question" />
-            <div class="phone-content">
-              <video class="phone-video" autoplay muted loop playsinline>
-                <source src="videos/demo-sikerir.mp4" type="video/mp4" />
-                Browser Kamu tidak support video tag.
-              </video>
-              <img src="images/phone.png" alt="Phone" class="phone-img" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Cards -->
-        <div class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-3 order-lg-3">
-            <a href="webinar.html" class="card-fitur-link">
-              <div class="card-fitur my-md-3">
-                  <div class="card-icon">
-                      <i class="bx bx-slideshow"></i>
-                  </div>
-                  <h3>Webinar</h3>
-                  <p>Belajar skill baru dari mentor</p>
-              </div>
-          </a>
-          <a href="#karir" class="card-fitur-link">
-              <div class="card-fitur my-md-3">
-                  <div class="card-icon">
-                      <i class="bx bx-briefcase"></i> 
-                  </div>
-                  <h3>Job Finder</h3>
-                  <p>Cari dan lamar kerja cepat</p>
-              </div>
-          </a>
-        </div> 
-      </section>
-
-
-    <!-- KARIR -->
-    <section id="karir" class="position-relative">
-      <!-- Background Radial -->
-      <div class="karir-bg"></div>
-
-      <!-- Judul -->
-      <h2 class="title text-center">
-        Temukan karier yang paling sesuai untuk Kamu
-      </h2>
-      <p class="karir-content text-center w-75 light-grey mx-auto">
-        Sikerir menawarkan berbagai peluang yang sesuai dengan keterampilan dan
-        ambisi Kamu. Daftar hari ini dan ambil langkah berikutnya menuju karier
-        Impian. Masa depan Kamu dimulai di sini.
-      </p>
-
-      <!-- FORM FILTER -->
-      <div class="container mt-4">
-        <form class="bg-white p-3 rounded shadow-sm ">
-          <div class="row g-2 align-items-center text-center">
-            <div class="col-12 col-md">
-              <input type="text" class="form-control" placeholder="Posisi" />
-            </div>
-
-            <div class="col-12 col-md">
-              <select class="form-select">
-                <option selected>Perusahaan</option>
-                <option>Astra Group</option>
-                <option>Artist Inc</option>
-                <option>GoTo</option>
-              </select>
-            </div>
-
-            <div class="col-12 col-md">
-              <select class="form-select">
-                <option selected>Lokasi</option>
-                <option>Jakarta</option>
-                <option>Bandung</option>
-                <option>Bali</option>
-                <option>Semarang</option>
-              </select>
-            </div>
-
-            <div class="col-12 col-md">
-              <select class="form-select">
-                <option selected>Jurusan</option>
-                <option>Ekonomi</option>
-                <option>Teknik</option>
-                <option>Pariwisata</option>
-              </select>
-            </div>
-
-            <div class="col-12 col-md">
-              <select class="form-select">
-                <option selected>Jenjang Pendidikan</option>
-                <option>SMA/SMK</option>
-                <option>S1</option>
-                <option>S2</option>
-              </select>
-            </div>
-
-            <div class="col-12 col-md-auto">
-              <button
-                type="submit"
-                class="btn btn-dark w-100 w-md-auto d-flex align-items-center justify-content-center"
-                style="border-radius: 5px; background-color: #01B7AB; border: none;"
-              >
-                <span class="me-2 d-md-none">Cari</span>
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
-          </div>
-        </form>
+        </a>
       </div>
 
-
-      <!-- CARD -->
-      <div class="container mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- Card 1 -->
-          <div class="col d-flex loker">
-            <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
-              <div class="card-body">
-                <!-- Logo -->
-                <div class="mb-4">
-                  <!-- Image Source : https://upload.wikimedia.org/wikipedia/commons/6/69/Logo_Baru_Pelindo_%282021%29.png -->
-                  <img
-                    src="images/pelindo-logo.png"
-                    alt="Pelindo Logo"
-                    style="height: 32px;"
-                  />
-                </div>
-                <!-- Perusahaan -->
-                <h6 class="mb-2 light-grey">
-                  PT. Pelabuhan Indonesia (Persero)
-                </h6>
-                <!-- Posisi -->
-                <h5 class="fw-bold mb-3">Front-End Developer</h5>
-                <!-- Lokasi -->
-                <p class="mb-2 light-grey">Kota Adm. Jakarta Utara</p>
-                <!-- Posisi & Pelamar -->
-                <p class="mb-3">
-                  <span class="primary-color">1 Posisi •</span>
-                  <span class="primary-color">25 Pelamar</span>
-                </p>
-                <!-- Badge -->
-                <div class="mb-3">
-                  <span
-                    class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
-                    style="background-color: #d1fadf"
-                  >
-                    Umum
-                  </span>
-                  <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2"
-                    >2 Bulan</span
-                  >
-                  <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2"
-                    >Onsite</span
-                  >
-                </div>
-                <hr />
-                <!-- Penutupan -->
-                <p class="mb-2">
-                  Penutupan:
-                  <span class="text-danger">7 September 2025</span>
-                </p>
-                <!-- Tanggal dibuat -->
-                <div
-                  class="d-flex align-items-center bg-light rounded p-2 mb-3"
-                >
-                  <i class="bi bi-calendar-event me-2"></i>
-                  <small class="text-muted">Dibuat 4 hari yang lalu</small>
-                </div>
-                <!-- Tombol -->
-                <a href="#" class="btn btn-dark w-100 rounded-3" style="border-radius: 5px; background-color: #01B7AB; border: none;">Lihat Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col d-flex loker">
-            <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
-              <div class="card-body">
-                <div class="mb-4">
-                  <!-- Image Source : https://propertree.id/images/brand/logopropertree.png -->
-                  <img
-                    src="images/propertree logo.png"
-                    alt="Propertree Logo"
-                    style="height: 32px; object-fit: contain; max-width: 100%;"
-                  />
-                </div>
-                <h6 class="light-grey mb-2">PT. Propertree Investa Cendekia</h6>
-                <h5 class="fw-bold mb-3">Flutter Developer</h5>
-                <p class="light-grey mb-2">Kota Adm. Jakarta Utara</p>
-                <p class="mb-3">
-                  <span class="primary-color">1 Posisi •</span>
-                  <span class="primary-color">25 Pelamar</span>
-                </p>
-                <div class="mb-3">
-                  <span
-                    class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
-                    style="background-color: #d1fadf"
-                  >
-                    Umum
-                  </span>
-                  <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2"
-                    >2 Bulan</span
-                  >
-                  <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2"
-                    >Onsite</span
-                  >
-                </div>
-                <hr />
-                <p class="mb-2">
-                  Penutupan:
-                  <span class="text-danger">7 September 2025</span>
-                </p>
-                <div
-                  class="d-flex align-items-center bg-light rounded p-2 mb-3"
-                >
-                  <i class="bi bi-calendar-event me-2"></i>
-                  <small class="text-muted">Dibuat 4 hari yang lalu</small>
-                </div>
-                <a href="#" class="btn btn-dark w-100 rounded-3" style="border-radius: 5px; background-color: #01B7AB; border: none;">Lihat Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col d-flex loker">
-            <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
-              <div class="card-body">
-                <div class="mb-4">
-                  <!-- Image Source : https://upload.wikimedia.org/wikipedia/commons/2/2b/GoTo_logo.png -->
-                  <img
-                    src="images/goto logo.png"
-                    alt="GoTo Logo"
-                    style="height: 32px;"
-                  />
-                </div>
-                <h6 class="light-grey mb-2">PT. GoTo Group</h6>
-                <h5 class="fw-bold mb-3">Fullstack Developer</h5>
-                <p class="light-grey mb-2">Kota Adm. Jakarta Utara</p>
-                <p class="mb-3">
-                  <span class="primary-color">1 Posisi •</span>
-                  <span class="primary-color">25 Pelamar</span>
-                </p>
-                <div class="mb-3">
-                  <span
-                    class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
-                    style="background-color: #d1fadf"
-                  >
-                    Umum
-                  </span>
-                  <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2"
-                    >2 Bulan</span
-                  >
-                  <span
-                    class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2"
-                    >Onsite</span
-                  >
-                </div>
-                <hr />
-                <p class="mb-2">
-                  Penutupan:
-                  <span class="text-danger">7 September 2025</span>
-                </p>
-                <div
-                  class="d-flex align-items-center bg-light rounded p-2 mb-3"
-                >
-                  <i class="bi bi-calendar-event me-2"></i>
-                  <small class="text-muted">Dibuat 4 hari yang lalu</small>
-                </div>
-                <a href="#" class="btn btn-dark w-100 rounded-3" style="border-radius: 5px; background-color: #01B7AB; border: none;">Lihat Detail</a>
-              </div>
-            </div>
+      <!-- Phone -->
+      <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center order-1 order-lg-2">
+        <div class="phone-wrapper">
+          <img src="images/tanda-tanya.png" alt="Background" class="bg-question" />
+          <div class="phone-content">
+            <video class="phone-video" autoplay muted loop playsinline>
+              <source src="videos/demo-sikerir.mp4" type="video/mp4" />
+              Browser Kamu tidak support video tag.
+            </video>
+            <img src="images/phone.png" alt="Phone" class="phone-img" />
           </div>
         </div>
       </div>
-    </section>
-    
-    <!-- SPONSOR  -->
-    <section id="sponsor">
-      <p class="karir-content text-center w-75 light-grey mx-auto mb-5">
-        Over <span>22,000 companies</span> partner with us for career
-        opportunities!
-      </p>
 
-      <!-- BRAND -->
-      <div class="container">
-        <div
-          class="row text-center justify-content-center align-items-center gx-3 gy-3"
-        >
-          <!-- Baris pertama (4 logo) -->
-          <div class="col-6 col-md-3 mb-4">
-            <!-- Image Source : https://id.wikipedia.org/wiki/Berkas:Ruangguru_logo.svg -->
-            <img
-              src="images/ruang-guru.png"
-              class="img-fluid sponsor-logo"
-              alt="Ruang Guru"
-            />
+      <!-- Right Cards -->
+      <div
+        class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-3 order-lg-3">
+        <a href="webinar.html" class="card-fitur-link">
+          <div class="card-fitur my-md-3">
+            <div class="card-icon">
+              <i class="bx bx-slideshow"></i>
+            </div>
+            <h3>Webinar</h3>
+            <p>Belajar skill baru dari mentor</p>
           </div>
-          <div class="col-6 col-md-3">
-            <!-- Image Source : https://skilvul.com/partners/skilvul/ -->
-            <img
-              src="images/skilvul.png"
-              class="img-fluid sponsor-logo"
-              alt="Skilvul"
-            />
+        </a>
+        <a href="#karir" class="card-fitur-link">
+          <div class="card-fitur my-md-3">
+            <div class="card-icon">
+              <i class="bx bx-briefcase"></i>
+            </div>
+            <h3>Job Finder</h3>
+            <p>Cari dan lamar kerja cepat</p>
           </div>
-          <div class="col-6 col-md-3">
-            <!-- Image Source : https://assets.techverse.asia/media/2023/12/14/jobstreet_logo.webp -->
-            <img
-              src="images/jobstreet.png"
-              class="img-fluid sponsor-logo"
-              alt="JobStreet"
-            />
-          </div>
-          <div class="col-6 col-md-3">
-            <!-- Image Source : https://images.glints.com/unsafe/glints-dashboard.oss-ap-southeast-1.aliyuncs.com/company-logo/805d861f71c172ce260a247028cb0718.png -->
-            <img
-              src="images/glints.png"
-              class="img-fluid sponsor-logo"
-              alt="Glints"
-            />
+        </a>
+      </div>
+  </section>
+
+
+  <!-- KARIR -->
+  <section id="karir" class="position-relative">
+    <!-- Background Radial -->
+    <div class="karir-bg"></div>
+
+    <!-- Judul -->
+    <h2 class="title text-center">
+      Temukan karier yang paling sesuai untuk Kamu
+    </h2>
+    <p class="karir-content text-center w-75 light-grey mx-auto">
+      Sikerir menawarkan berbagai peluang yang sesuai dengan keterampilan dan
+      ambisi Kamu. Daftar hari ini dan ambil langkah berikutnya menuju karier
+      Impian. Masa depan Kamu dimulai di sini.
+    </p>
+
+    <!-- FORM FILTER -->
+    <div class="container mt-4">
+      <form class="bg-white p-3 rounded shadow-sm ">
+        <div class="row g-2 align-items-center text-center">
+          <div class="col-12 col-md">
+            <input type="text" class="form-control" placeholder="Posisi" />
           </div>
 
-          <!-- Baris kedua (4 logo) -->
-          <div class="col-6 col-md-3">
-            <!-- Image Source : https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2014/12/dicoding-header-logo.png -->
-            <img
-              src="images/dicoding.png"
-              class="img-fluid sponsor-logo"
-              alt="Dicoding"
-            />
+          <div class="col-12 col-md">
+            <select class="form-select">
+              <option selected>Perusahaan</option>
+              <option>Astra Group</option>
+              <option>Artist Inc</option>
+              <option>GoTo</option>
+            </select>
           </div>
-          <div class="col-6 col-md-3">
-            <!-- Image Source : https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LinkedIn_2021.svg/2560px-LinkedIn_2021.svg.png -->
-            <img
-              src="images/linkedin.png"
-              class="img-fluid sponsor-linkedin"
-              alt="LinkedIn"
-            />
+
+          <div class="col-12 col-md">
+            <select class="form-select">
+              <option selected>Lokasi</option>
+              <option>Jakarta</option>
+              <option>Bandung</option>
+              <option>Bali</option>
+              <option>Semarang</option>
+            </select>
           </div>
-          <div class="col-6 col-md-3">
-            <!-- Image Source : https://employers.hireclick.com/wp-content/uploads/2023/02/indeed-logo.webp -->
-            <img
-              src="images/indeed.png"
-              class="img-fluid sponsor-logo"
-              alt="Indeed"
-            />
+
+          <div class="col-12 col-md">
+            <select class="form-select">
+              <option selected>Jurusan</option>
+              <option>Ekonomi</option>
+              <option>Teknik</option>
+              <option>Pariwisata</option>
+            </select>
           </div>
-          <div class="col-6 col-md-3">
-            <!-- Image Source : https://cdn.sejutacita.id/63e0c23d8c574700140623a5/JobPortalCompanyLogo/3246d463-d005-4125-b2a1-7133452a5b30.png -->
-            <img
-              src="images/dealls.png"
-              class="img-fluid sponsor-logo"
-              alt="Dealls"
-            />
+
+          <div class="col-12 col-md">
+            <select class="form-select">
+              <option selected>Jenjang Pendidikan</option>
+              <option>SMA/SMK</option>
+              <option>S1</option>
+              <option>S2</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-auto">
+            <button type="submit" class="btn btn-dark w-100 w-md-auto d-flex align-items-center justify-content-center"
+              style="border-radius: 5px; background-color: #01B7AB; border: none;">
+              <span class="me-2 d-md-none">Cari</span>
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- CARD -->
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col d-flex loker">
+          <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
+            <div class="card-body">
+              <!-- Logo -->
+              <div class="mb-4">
+                <!-- Image Source : https://upload.wikimedia.org/wikipedia/commons/6/69/Logo_Baru_Pelindo_%282021%29.png -->
+                <img src="images/pelindo-logo.png" alt="Pelindo Logo" style="height: 32px;" />
+              </div>
+              <!-- Perusahaan -->
+              <h6 class="mb-2 light-grey">
+                PT. Pelabuhan Indonesia (Persero)
+              </h6>
+              <!-- Posisi -->
+              <h5 class="fw-bold mb-3">Front-End Developer</h5>
+              <!-- Lokasi -->
+              <p class="mb-2 light-grey">Kota Adm. Jakarta Utara</p>
+              <!-- Posisi & Pelamar -->
+              <p class="mb-3">
+                <span class="primary-color">1 Posisi •</span>
+                <span class="primary-color">25 Pelamar</span>
+              </p>
+              <!-- Badge -->
+              <div class="mb-3">
+                <span class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
+                  style="background-color: #d1fadf">
+                  Umum
+                </span>
+                <span class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2">2 Bulan</span>
+                <span class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2">Onsite</span>
+              </div>
+              <hr />
+              <!-- Penutupan -->
+              <p class="mb-2">
+                Penutupan:
+                <span class="text-danger">7 September 2025</span>
+              </p>
+              <!-- Tanggal dibuat -->
+              <div class="d-flex align-items-center bg-light rounded p-2 mb-3">
+                <i class="bi bi-calendar-event me-2"></i>
+                <small class="text-muted">Dibuat 4 hari yang lalu</small>
+              </div>
+              <!-- Tombol -->
+              <a href="#" class="btn btn-dark w-100 rounded-3"
+                style="border-radius: 5px; background-color: #01B7AB; border: none;">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col d-flex loker">
+          <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
+            <div class="card-body">
+              <div class="mb-4">
+                <!-- Image Source : https://propertree.id/images/brand/logopropertree.png -->
+                <img src="images/propertree logo.png" alt="Propertree Logo"
+                  style="height: 32px; object-fit: contain; max-width: 100%;" />
+              </div>
+              <h6 class="light-grey mb-2">PT. Propertree Investa Cendekia</h6>
+              <h5 class="fw-bold mb-3">Flutter Developer</h5>
+              <p class="light-grey mb-2">Kota Adm. Jakarta Utara</p>
+              <p class="mb-3">
+                <span class="primary-color">1 Posisi •</span>
+                <span class="primary-color">25 Pelamar</span>
+              </p>
+              <div class="mb-3">
+                <span class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
+                  style="background-color: #d1fadf">
+                  Umum
+                </span>
+                <span class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2">2 Bulan</span>
+                <span class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2">Onsite</span>
+              </div>
+              <hr />
+              <p class="mb-2">
+                Penutupan:
+                <span class="text-danger">7 September 2025</span>
+              </p>
+              <div class="d-flex align-items-center bg-light rounded p-2 mb-3">
+                <i class="bi bi-calendar-event me-2"></i>
+                <small class="text-muted">Dibuat 4 hari yang lalu</small>
+              </div>
+              <a href="#" class="btn btn-dark w-100 rounded-3"
+                style="border-radius: 5px; background-color: #01B7AB; border: none;">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col d-flex loker">
+          <div class="card shadow-sm flex-fill rounded-4 border-0 p-3">
+            <div class="card-body">
+              <div class="mb-4">
+                <!-- Image Source : https://upload.wikimedia.org/wikipedia/commons/2/2b/GoTo_logo.png -->
+                <img src="images/goto logo.png" alt="GoTo Logo" style="height: 32px;" />
+              </div>
+              <h6 class="light-grey mb-2">PT. GoTo Group</h6>
+              <h5 class="fw-bold mb-3">Fullstack Developer</h5>
+              <p class="light-grey mb-2">Kota Adm. Jakarta Utara</p>
+              <p class="mb-3">
+                <span class="primary-color">1 Posisi •</span>
+                <span class="primary-color">25 Pelamar</span>
+              </p>
+              <div class="mb-3">
+                <span class="badge rounded-pill px-3 py-2 text-success border border-success mb-2"
+                  style="background-color: #d1fadf">
+                  Umum
+                </span>
+                <span class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2 mb-2">2 Bulan</span>
+                <span class="badge bg-secondary-subtle text-secondary border rounded-pill px-3 py-2">Onsite</span>
+              </div>
+              <hr />
+              <p class="mb-2">
+                Penutupan:
+                <span class="text-danger">7 September 2025</span>
+              </p>
+              <div class="d-flex align-items-center bg-light rounded p-2 mb-3">
+                <i class="bi bi-calendar-event me-2"></i>
+                <small class="text-muted">Dibuat 4 hari yang lalu</small>
+              </div>
+              <a href="#" class="btn btn-dark w-100 rounded-3"
+                style="border-radius: 5px; background-color: #01B7AB; border: none;">Lihat Detail</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- SPONSOR  -->
+  <section id="sponsor">
+    <p class="karir-content text-center w-75 light-grey mx-auto mb-5">
+      Over <span>22,000 companies</span> partner with us for career
+      opportunities!
+    </p>
+
+    <!-- BRAND -->
+    <div class="container">
+      <div class="row text-center justify-content-center align-items-center gx-3 gy-3">
+        <!-- Baris pertama (4 logo) -->
+        <div class="col-6 col-md-3 mb-4">
+          <!-- Image Source : https://id.wikipedia.org/wiki/Berkas:Ruangguru_logo.svg -->
+          <img src="images/ruang-guru.png" class="img-fluid sponsor-logo" alt="Ruang Guru" />
+        </div>
+        <div class="col-6 col-md-3">
+          <!-- Image Source : https://skilvul.com/partners/skilvul/ -->
+          <img src="images/skilvul.png" class="img-fluid sponsor-logo" alt="Skilvul" />
+        </div>
+        <div class="col-6 col-md-3">
+          <!-- Image Source : https://assets.techverse.asia/media/2023/12/14/jobstreet_logo.webp -->
+          <img src="images/jobstreet.png" class="img-fluid sponsor-logo" alt="JobStreet" />
+        </div>
+        <div class="col-6 col-md-3">
+          <!-- Image Source : https://images.glints.com/unsafe/glints-dashboard.oss-ap-southeast-1.aliyuncs.com/company-logo/805d861f71c172ce260a247028cb0718.png -->
+          <img src="images/glints.png" class="img-fluid sponsor-logo" alt="Glints" />
+        </div>
+
+        <!-- Baris kedua (4 logo) -->
+        <div class="col-6 col-md-3">
+          <!-- Image Source : https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2014/12/dicoding-header-logo.png -->
+          <img src="images/dicoding.png" class="img-fluid sponsor-logo" alt="Dicoding" />
+        </div>
+        <div class="col-6 col-md-3">
+          <!-- Image Source : https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LinkedIn_2021.svg/2560px-LinkedIn_2021.svg.png -->
+          <img src="images/linkedin.png" class="img-fluid sponsor-linkedin" alt="LinkedIn" />
+        </div>
+        <div class="col-6 col-md-3">
+          <!-- Image Source : https://employers.hireclick.com/wp-content/uploads/2023/02/indeed-logo.webp -->
+          <img src="images/indeed.png" class="img-fluid sponsor-logo" alt="Indeed" />
+        </div>
+        <div class="col-6 col-md-3">
+          <!-- Image Source : https://cdn.sejutacita.id/63e0c23d8c574700140623a5/JobPortalCompanyLogo/3246d463-d005-4125-b2a1-7133452a5b30.png -->
+          <img src="images/dealls.png" class="img-fluid sponsor-logo" alt="Dealls" />
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<section class="container my-5">
+  <section class="container my-5">
     <div class="cv-section p-4 p-md-5">
-      
+
       <div class="row align-items-center">
-        
+
         <div class="col-md-7 col-lg-8 text-white text-center text-md-start">
-          
+
           <h1 class="fw-bold mb-3 cv-title">
             Yuk <u>UBAH CV MU SEKARANG!</u> Supaya cepat dilirik perusahaan
           </h1>
-          
+
           <p class="lead mb-4 cv-description">
-            Di Sikerir, Kamu bisa langsung punya CV profesional yang siap dipakai apply ke berbagai perusahaan. Cukup masukkan data, dan Sikerir otomatis bikin CV yang bisa langsung Kamu export!
+            Di Sikerir, Kamu bisa langsung punya CV profesional yang siap dipakai apply ke berbagai perusahaan. Cukup
+            masukkan data, dan Sikerir otomatis bikin CV yang bisa langsung Kamu export!
           </p>
-          
+
           <a href="cv-builder.html" class="btn-white px-4 py-2 mt-2 d-inline-block">
             Buat CV
           </a>
-          
+
         </div>
 
         <div class="col-md-5 col-lg-4 d-none d-md-block">
-            </div>
+        </div>
 
       </div>
     </div>
-</section>
+  </section>
 
   <!-- CTA -->
   <section class="cta-footer text-center">
-  <div class="container">
-    <div class="card shadow-lg border-0 py-4 px-5 mx-auto " style="max-width: 800px; border-radius: 10px;">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <h4 class="mb-3 me-md-5 mb-md-0 fw-bold">
-          Kamu lagi cari kandidat berkualitas?
-        </h4>
-        <a href="#" class="btn-explore px-4 py-2" >
-          Buka Loker di Sini
-        </a>
+    <div class="container">
+      <div class="card shadow-lg border-0 py-4 px-5 mx-auto " style="max-width: 800px; border-radius: 10px;">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <h4 class="mb-3 me-md-5 mb-md-0 fw-bold">
+            Kamu lagi cari kandidat berkualitas?
+          </h4>
+          <a href="#" class="btn-explore px-4 py-2">
+            Buka Loker di Sini
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="footer text-white">
-  <div class="container py-5">
-    <div class="row justify-content-center gy-3 pt-4">
+  <!-- Footer -->
+  <footer class="footer text-white">
+    <div class="container py-5">
+      <div class="row justify-content-center gy-3 pt-4">
 
-      <!-- Brand + Sosial Media -->
-      <div class="col-12 col-lg-3 mb-4">
-        <div class="d-flex flex-column align-items-center align-items-lg-start">
-          <!-- Logo + Nama -->
-          <div class="d-flex align-items-center justify-content-center mb-3"> <img src="images/logo_sikerir.png" class="footer-logo me-2" alt="Sikerir Logo"> <h3 class="fw-bold mb-0 text-white">Sikerir</h3> </div>
+        <!-- Brand + Sosial Media -->
+        <div class="col-12 col-lg-3 mb-4">
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+            <!-- Logo + Nama -->
+            <div class="d-flex align-items-center justify-content-center mb-3"> <img src="images/logo_sikerir.png"
+                class="footer-logo me-2" alt="Sikerir Logo">
+              <h3 class="fw-bold mb-0 text-white">Sikerir</h3>
+            </div>
 
-          <!-- Sosial Media -->
-          <div class="text-center text-lg-start w-100">
-        <span class="fw-bold d-block mb-2">Sosial Media:</span>
-        <div class="d-flex justify-content-center justify-content-lg-start gap-2">
-          <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="social-circle"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="social-circle"><i class="bi bi-youtube"></i></a>
-          <a href="#" class="social-circle"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
+            <!-- Sosial Media -->
+            <div class="text-center text-lg-start w-100">
+              <span class="fw-bold d-block mb-2">Sosial Media:</span>
+              <div class="d-flex justify-content-center justify-content-lg-start gap-2">
+                <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-circle"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="social-circle"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="social-circle"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
 
-  </div>
-</div>
-
-      <!-- Links -->
-      <div class="col-md-6 col-lg-5 mb-4">
-        <div class="row g-3">
-          <div class="col-6 col-md-6">
-            <a href="#" class="footer-card">
-              TENTANG <i class="bi bi-box-arrow-up-right"></i>
-            </a>
-          </div>
-          <div class="col-6 col-md-6">
-            <a href="cv-builder.html" class="footer-card">
-              CV BUILDER <i class="bi bi-box-arrow-up-right"></i>
-            </a>
-          </div>
-          <div class="col-6 col-md-6">
-            <a href="webinar.html" class="footer-card">
-              WEBINAR <i class="bi bi-box-arrow-up-right"></i>
-            </a>
-          </div>
-          <div class="col-6 col-md-6">
-            <a href="quiz.html" class="footer-card">
-              TES MINAT <i class="bi bi-box-arrow-up-right"></i>
-            </a>
           </div>
         </div>
-      </div>
 
-      <!-- Newsletter -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <p class="text-center text-md-start">
-          Daftarkan email Kamu untuk berlangganan di Sikerir dan selalu dapatkan info lowongan kerja terbaru!
-        </p>
-        <form>
-            <div class="input-group email-subscribe-group"> 
-              <input 
-                type="email" 
-                class="form-control email-input" 
-                placeholder="Masukkan email kamu">
-              
+        <!-- Links -->
+        <div class="col-md-6 col-lg-5 mb-4">
+          <div class="row g-3">
+            <div class="col-6 col-md-6">
+              <a href="#" class="footer-card">
+                TENTANG <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="col-6 col-md-6">
+              <a href="cv-builder.html" class="footer-card">
+                CV BUILDER <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="col-6 col-md-6">
+              <a href="webinar.html" class="footer-card">
+                WEBINAR <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="col-6 col-md-6">
+              <a href="quiz.html" class="footer-card">
+                TES MINAT <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <p class="text-center text-md-start">
+            Daftarkan email Kamu untuk berlangganan di Sikerir dan selalu dapatkan info lowongan kerja terbaru!
+          </p>
+          <form>
+            <div class="input-group email-subscribe-group">
+              <input type="email" class="form-control email-input" placeholder="Masukkan email kamu">
+
               <a href="#" class="email-icon-btn">
                 <i class="bi bi-envelope"></i>
               </a>
             </div>
           </form>
+        </div>
+
       </div>
-
     </div>
-  </div>
-  <div class="text-center py-3 border-top border-light">
-    <small>Copyright © 2025 Topcerr. All rights reserved.</small>
-  </div>
-</footer>
+    <div class="text-center py-3 border-top border-light">
+      <small>Copyright © 2025 Topcerr. All rights reserved.</small>
+    </div>
+  </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </body>
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
 </html>

@@ -166,26 +166,26 @@ document.getElementById("addSkill").addEventListener("click", () => {
 
 // Color Swatch
 document.querySelectorAll('.color-swatch').forEach(swatch => {
-  swatch.addEventListener('click', () => {
-    document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
-    
-    swatch.classList.add('active');
-    
-    const newColor = swatch.getAttribute('data-color');
-    
-    const resumeHeader = document.querySelector('.resume-header');
-    if (resumeHeader) {
-      resumeHeader.style.backgroundColor = newColor;
-    }
-  });
+    swatch.addEventListener('click', () => {
+        document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+
+        swatch.classList.add('active');
+
+        const newColor = swatch.getAttribute('data-color');
+
+        const resumeHeader = document.querySelector('.resume-header');
+        if (resumeHeader) {
+            resumeHeader.style.backgroundColor = newColor;
+        }
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const defaultColor = document.querySelector('.color-swatch.active').getAttribute('data-color');
-  const resumeHeader = document.querySelector('.resume-header');
-  if (resumeHeader) {
-    resumeHeader.style.backgroundColor = defaultColor;
-  }
+    const defaultColor = document.querySelector('.color-swatch.active').getAttribute('data-color');
+    const resumeHeader = document.querySelector('.resume-header');
+    if (resumeHeader) {
+        resumeHeader.style.backgroundColor = defaultColor;
+    }
 });
 // Color Swatch end
 
@@ -197,18 +197,18 @@ document.getElementById("exportBtn").addEventListener("click", () => {
 // Helper Function: Update ALL Previews
 function updateAllPreviews() {
     const cvPreview = document.getElementById("cvPreview");
-    
+
     // Cek apakah ada data yang diisi
     const hasContent = document.getElementById("fullName").value ||
-                       document.getElementById("email").value ||
-                       document.getElementById("phone").value ||
-                       document.getElementById("location").value ||
-                       document.getElementById("website").value ||
-                       document.getElementById("linkedin").value ||
-                       document.getElementById("summary").value ||
-                       document.querySelectorAll(".experience-form").length > 0 ||
-                       document.querySelectorAll(".education-form").length > 0 ||
-                       document.querySelectorAll(".skill-form-row").length > 0;
+        document.getElementById("email").value ||
+        document.getElementById("phone").value ||
+        document.getElementById("location").value ||
+        document.getElementById("website").value ||
+        document.getElementById("linkedin").value ||
+        document.getElementById("summary").value ||
+        document.querySelectorAll(".experience-form").length > 0 ||
+        document.querySelectorAll(".education-form").length > 0 ||
+        document.querySelectorAll(".skill-form-row").length > 0;
 
     // Tampilkan konten "Start Building" jika form masih kosong
     if (!hasContent) {
@@ -223,7 +223,7 @@ function updateAllPreviews() {
 
     // Jika ada konten, render ulang seluruh preview
     cvPreview.innerHTML = '';
-    
+
     // 1. Ambil data Personal Info
     const fullName = document.getElementById("fullName").value || "Nama Kamu";
     const email = document.getElementById("email").value;
@@ -255,7 +255,7 @@ function updateAllPreviews() {
         const previewExperienceHTML = document.createElement('div');
         previewExperienceHTML.innerHTML = `<h5 class="section-title">Work Experience</h5><ul class="section-list"></ul>`;
         const experienceList = previewExperienceHTML.querySelector('ul');
-        
+
         experienceForms.forEach(form => {
             const position = form.querySelector(".exp-position").value;
             const company = form.querySelector(".exp-company").value;
@@ -265,7 +265,7 @@ function updateAllPreviews() {
             const isCurrent = form.querySelector(".exp-current-job").checked;
             const description = form.querySelector(".exp-description").value;
             const formattedDescription = description.replace(/\n/g, '<br>');
-            
+
             if (position && company) {
                 const li = document.createElement("li");
                 li.classList.add('experience-item');

@@ -1,28 +1,28 @@
 :root {
-    --primary-color: #1b1b1b;
-    --bg-color: #FDF8E3;
-    --green-color: #01B7AB;
-    --purple-color: #5D5BFF;
-    --yellow-color: #FDB725;
-    --orange-color: #FD8A25;
+  --primary-color: #1b1b1b;
+  --bg-color: #FDF8E3;
+  --green-color: #01B7AB;
+  --purple-color: #5D5BFF;
+  --yellow-color: #FDB725;
+  --orange-color: #FD8A25;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
-    color: var(--primary-color);
-    font-family: "DM Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  overflow-x: hidden;
+  color: var(--primary-color);
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /* HEADER */
@@ -164,6 +164,7 @@ header {
   min-height: 100vh;
   padding: 8em 3em;
 }
+
 .cv-form-container {
   background: white;
   padding: 1.5rem;
@@ -227,6 +228,7 @@ header {
   padding: 0.4rem 1rem;
   border: none;
 }
+
 .btn-add:hover {
   background-color: #00aa9e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.127);
@@ -356,6 +358,7 @@ header {
   padding: 0.4rem 1rem;
   border: none;
 }
+
 .btn-export:hover {
   background-color: #eeaa16;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.127);
@@ -363,7 +366,7 @@ header {
 }
 
 @media (max-width: 480px) {
-    .cv-builder-container {
-        padding: 8em 2em;
-    }
+  .cv-builder-container {
+    padding: 8em 2em;
+  }
 }

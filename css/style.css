@@ -161,18 +161,22 @@ header {
     background-size: 0% 0.3em;
     background-position: 0 85%;
   }
+
   25% {
     background-size: 100% 0.3em;
     background-position: 0 85%;
   }
+
   50% {
     background-size: 100% 0.3em;
     background-position: 100% 85%;
   }
+
   75% {
     background-size: 0% 0.3em;
     background-position: 100% 85%;
   }
+
   100% {
     background-size: 0% 0.3em;
     background-position: 0 85%;
@@ -264,10 +268,12 @@ header {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -277,6 +283,7 @@ header {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -313,6 +320,7 @@ header {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -648,6 +656,7 @@ header {
   flex-basis: 40%;
   min-width: 350px;
 }
+
 .content-col {
   flex-basis: 50%;
   width: 50%;
@@ -713,6 +722,7 @@ header {
   font-weight: normal;
   color: #444;
 }
+
 /* Media Queries */
 @media (max-width: 1024px) {
   .about {
@@ -808,7 +818,7 @@ header {
 /* FITUR */
 #fitur {
   padding: 0 9em;
-  align-items: stretch; /* biar semua col tingginya sama */
+  align-items: stretch;
 }
 
 .card-fitur {
@@ -817,7 +827,7 @@ header {
   padding: 20px;
   text-align: left;
   position: relative;
-  flex: 1; /* biar card bisa fleksibel tinggi */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -867,7 +877,7 @@ header {
   transform: translate(3px, -3px);
 }
 
- .phone-wrapper {
+.phone-wrapper {
   width: 100%;
   max-width: 518px;
   aspect-ratio: 1 / 1;
@@ -877,7 +887,7 @@ header {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: flex-start;
   padding-top: 14%;
 }
 
@@ -895,7 +905,8 @@ header {
 .phone-content {
   position: relative;
   width: 55%;
-  aspect-ratio: 9 / 19.5; /* rasio frame HP real */
+  aspect-ratio: 9 / 19.5;
+  /* rasio frame HP real */
   z-index: 2;
 }
 
@@ -907,11 +918,11 @@ header {
 
 .phone-content .phone-video {
   position: absolute;
-  top: 1.5%; 
+  top: 1.5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%; 
-  height: auto; 
+  width: 90%;
+  height: auto;
   border-radius: 14px;
   object-fit: cover;
   z-index: 2;
@@ -925,6 +936,7 @@ header {
   justify-content: space-between;
   gap: 1em;
 }
+
 .card-fitur-link {
   text-decoration: none;
   color: inherit;
@@ -952,6 +964,7 @@ header {
 .card-fitur-link:hover .card-fitur {
   transform: translateY(-10px);
 }
+
 .card-icon {
   background: var(--green-color);
   color: white;
@@ -1096,19 +1109,18 @@ header {
   transform: translateX(-50%);
   width: 70vh;
   height: 886px;
-  background: radial-gradient(
-    circle,
-    rgba(209, 250, 223, 0.4) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
+  background: radial-gradient(circle,
+      rgba(209, 250, 223, 0.4) 0%,
+      rgba(255, 255, 255, 0) 70%);
   z-index: 0;
 }
 
 .loker {
   transition: transform 0.3s ease;
 }
-.loker:hover{
-  transform: translateY(-5px); 
+
+.loker:hover {
+  transform: translateY(-5px);
 }
 
 @media (max-width: 480px) {
@@ -1142,9 +1154,9 @@ header {
 }
 
 @media (max-width: 480px) {
-    .karir-content {
-        font-size: 0.9rem;
-    }
+  .karir-content {
+    font-size: 0.9rem;
+  }
 }
 
 .sponsor-logo {
@@ -1231,6 +1243,7 @@ header {
     font-size: 0.95rem;
   }
 }
+
 @media (max-width: 480px) {
   .cv-section {
     background-position: left bottom;
@@ -1240,10 +1253,12 @@ header {
 /* FOOTER */
 
 .cta-footer {
-  margin-bottom: -20px; /* biar nimpa ke atas footer */
+  margin-bottom: -20px;
+  /* biar nimpa ke atas footer */
   position: relative;
   z-index: 2;
 }
+
 .footer {
   width: 100%;
   background: var(--green-color);
@@ -1299,9 +1314,9 @@ header {
 }
 
 .email-subscribe-group {
-    border-radius: 10px; 
-    overflow: hidden;
-    position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
 .email-input {
@@ -1312,39 +1327,39 @@ header {
 }
 
 .email-icon-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px; 
-    height: 50px; 
-    background-color: white; 
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    border: none;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  padding: 0;
 
 }
 
 .email-icon-btn i {
-    color: var(--green-color); 
-    font-size: 20px;
+  color: var(--green-color);
+  font-size: 20px;
 }
 
 .email-icon-btn:hover {
-    background-color: #e2f4f3;
+  background-color: #e2f4f3;
 }
 
 .email-icon-btn:active,
 .email-icon-btn:focus {
-    background-color: #c9e9e7;
+  background-color: #c9e9e7;
 }
 
 .footer-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff; 
-  color: var(--primary-color); 
+  background-color: #fff;
+  color: var(--primary-color);
   font-weight: 600;
   text-decoration: none;
   padding: 20px;
