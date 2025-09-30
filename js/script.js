@@ -11,6 +11,7 @@ window.onscroll = () => {
   navbar.classList.remove('active')
 }
 
+// Marquee
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".count");
   const speed = 90; // makin kecil makin cepat

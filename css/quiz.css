@@ -223,7 +223,7 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
 }
 
 #startBtn {
@@ -284,6 +284,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    z-index: 2;
 }
 
 .answer-btn {
@@ -512,14 +513,14 @@ header {
   margin-bottom: 20px;
   overflow: hidden;        /* gambar nggak keluar kotak */
   color: #666;             /* fallback kalau img kosong */
-  font-size: 14px;         /* fallback text */
+  font-size: 14px;
 }
 
 #jobResult .job-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;   /* cover = isi penuh kotak, bisa kepotong dikit */
-  border-radius: 12px; /* biar ikutin border parent */
+  border-radius: 12px;
 }
 
 

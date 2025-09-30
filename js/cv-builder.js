@@ -35,7 +35,7 @@ document.getElementById("addExperience").addEventListener("click", () => {
             </div>
             <div class="col-md-6">
                 <label for="location-${experienceCount}" class="form-label">Lokasi</label>
-                <input type="text" class="form-control exp-location" id="location-${experienceCount}" placeholder="San Francisco, CA">
+                <input type="text" class="form-control exp-location" id="location-${experienceCount}" placeholder="Onsite">
             </div>
             <div class="col-md-6">
                 <label for="startDate-${experienceCount}" class="form-label">Tanggal Mulai</label>
@@ -93,7 +93,7 @@ document.getElementById("addEducation").addEventListener("click", () => {
         <div class="row g-3">
             <div class="col-md-6">
                 <label for="degree-${educationCount}" class="form-label">Jurusan</label>
-                <input type="text" class="form-control edu-degree" id="degree-${educationCount}" placeholder="Bachelor of Science">
+                <input type="text" class="form-control edu-degree" id="degree-${educationCount}" placeholder="Software Engineering">
             </div>
             <div class="col-md-6">
                 <label for="institution-${educationCount}" class="form-label">Institusi</label>

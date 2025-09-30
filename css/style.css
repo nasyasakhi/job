@@ -867,48 +867,56 @@ header {
   transform: translate(3px, -3px);
 }
 
-.phone-wrapper {
+ .phone-wrapper {
   width: 100%;
   max-width: 518px;
-  height: 510px; /* ini patokan tinggi */
+  aspect-ratio: 1 / 1;
   background: var(--green-color);
   border-radius: 30px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; 
+  padding-top: 14%;
 }
 
 .phone-wrapper .bg-question {
   position: absolute;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   object-fit: contain;
   top: 0;
   left: 0;
 }
 
-.phone-wrapper .phone-img {
-  position: absolute;
-  max-width: 75%;
+/* bungkus HP & video */
+.phone-content {
+  position: relative;
+  width: 55%;
+  aspect-ratio: 9 / 19.5; /* rasio frame HP real */
   z-index: 2;
-  top: 110px;
 }
 
-/* video dalam layar */
-.phone-wrapper .phone-video {
+.phone-content .phone-img {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.phone-content .phone-video {
   position: absolute;
-  width: 55%;
-  height: 75%;
-  top: 12%;
+  top: 1.5%; 
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 20px;
+  width: 90%; 
+  height: auto; 
+  border-radius: 14px;
   object-fit: cover;
   z-index: 2;
 }
+
 /* Left & Right Cards */
 .left-cards,
 .right-cards {
@@ -1012,22 +1020,16 @@ header {
   }
 
   .phone-wrapper {
-    width: 90%;
-    height: auto;
-    aspect-ratio: 1/1;
+    max-width: 500px;
+    padding-top: 10%;
   }
 
-  .phone-wrapper .phone-img {
+  .phone-content {
     width: 60%;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
-  .phone-wrapper .phone-video {
-    width: 45%;
-    height: 60%;
-    top: 20%;
+  .phone-content .phone-video {
+    width: 90%;
   }
 }
 
@@ -1046,6 +1048,11 @@ header {
 
   .phone-wrapper {
     width: 100%;
+    padding-bottom: 6%;
+  }
+
+  .phone-content {
+    width: 60%;
   }
 
   .card-fitur {
@@ -1106,7 +1113,7 @@ header {
 
 @media (max-width: 480px) {
   #karir::before {
-    width: 40vh;
+    width: 30vh;
   }
 }
 
@@ -1249,7 +1256,7 @@ header {
 }
 
 .footer a:hover {
-  color: var(--bg-color);
+  color: var(--purple-color);
   font-weight: bold;
 }
 
@@ -1291,33 +1298,46 @@ header {
   border-bottom: 3px solid white;
 }
 
-/* wrapper agar position relative */
-.email-input-wrapper {
-  position: relative;
-  width: 100%;
+.email-subscribe-group {
+    border-radius: 10px; 
+    overflow: hidden;
+    position: relative;
 }
 
-/* input dengan padding kanan lebih besar */
-.email-input-with-icon {
+.email-input {
   width: 100%;
   height: 50px;
   font-size: 16px;
   border: 1px solid #ced4da;
-  border-radius: 10px;
-  padding-right: 45px; /* kasih space untuk icon */
 }
 
-/* icon di kanan dalam input */
-.email-icon-inside {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: var(--green-color); /* warna icon */
-  pointer-events: none; /* supaya klik icon tidak ganggu input */
+.email-icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 50px; 
+    background-color: white; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 0;
+
 }
 
+.email-icon-btn i {
+    color: var(--green-color); 
+    font-size: 20px;
+}
+
+.email-icon-btn:hover {
+    background-color: #e2f4f3;
+}
+
+.email-icon-btn:active,
+.email-icon-btn:focus {
+    background-color: #c9e9e7;
+}
 
 .footer-card {
   display: flex;
@@ -1328,7 +1348,7 @@ header {
   font-weight: 600;
   text-decoration: none;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
@@ -1359,8 +1379,3 @@ header {
   transition: 0.3s;
   text-decoration: none;
 }
-
-
-
-
-
